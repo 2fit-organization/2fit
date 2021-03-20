@@ -1,0 +1,192 @@
+/* ################## WARNING DON`T TOUCH THIS FILE !!!!!! @@@@@@@@@@@@@@@@@@@@@@@@@ */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* ######################################Header################################################# */
+header {
+  background-color: rgb(44, 43, 43);
+  margin-bottom: 30px;
+  height: 22vh;
+  padding-top: 2vh;
+  padding-bottom: 4vh;
+
+}
+
+nav {
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-top: 2vh;
+  overflow: hidden;
+}
+
+.headerLogo {
+width: 30%;
+float: left;
+padding-bottom: 2vh;
+}
+
+.headerLogo img {
+width: 160px;
+}
+
+.navList {
+  width: 70%;
+  float: left;
+}
+
+.navList li {
+  margin-left: 50px;
+  float: right;
+  padding-top: 4vh;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+}
+
+.navList li a {
+  text-decoration: none;
+  color: rgb(196, 193, 193);
+}
+
+.navList li a:hover {
+  color: white;
+  font-size: 20px;
+}
+
+.navList li a:active {
+  color: white;
+  font-size: 20px;
+}
+
+/* ######################################Footer################################################# */
+footer {
+  background-color: rgb(44, 43, 43);
+  padding-top: 30px;
+  padding-bottom: 30px;
+  overflow: hidden;
+  margin-top: 30px;
+}
+
+.footer-container {
+  width: 80%;
+  margin: auto;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer1 {
+  float: right;
+  width: 50%;
+  margin-bottom: 30px;
+}
+
+.footer-logo {
+  width: 220px;
+  display: block;
+  margin: auto;
+  margin-bottom: 20px;
+}
+
+.footer11 p  {
+  color: white;
+  text-align: center;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+.footer11 ul  {
+  overflow: hidden;
+  width: 50%;
+  margin: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.footer11 ul img {
+  width: 30px;
+  margin-left: 20px;
+  float: left;
+}
+
+.newsLetter {
+  width: 60%;
+  margin: auto;
+}
+
+.newsLetter input {
+  height: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: #dddddd;
+  border: hidden;
+}
+
+.newsLetter input:first-child {
+  background-color: white;
+}
+
+.newsLetter input:first-child:hover {
+  background-color: #dddddd;
+}
+
+.newsLetter input:nth-child(2) {
+cursor: pointer;
+}
+
+.newsLetter input:nth-child(2):hover {
+background-color: #b6b3b3;
+}
+
+.footer2 {
+  float: right;
+  width: 50%;
+  margin-top: 30px;
+}
+
+.footer2 h3 {
+  color: white;
+  font-size: 25px;
+  margin-bottom: 20px;
+}
+
+.footer2 a {
+  display: block;
+  font-size: 20px;
+  margin-bottom: 10px;
+  text-decoration: none;
+  color: rgb(196, 193, 193);
+}
+
+.footer2 a:hover {
+color: #6b6666;
+}
+
+.footer2 ul {
+  margin-left: 10px;
+  list-style-type: disc;
+  color: #dddddd;
+}
+
+.footer2 li {
+  margin-left: 30px;
+}
+
+.footer3 {
+  clear: both;
+}
+
+.footer3 p {
+  color: white;
+  text-align: center;
+  margin-bottom: 10px;
+  line-height: 1.4;
+}
+
