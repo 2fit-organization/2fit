@@ -1,6 +1,155 @@
 /* ######################################Main################################################# */
-main {
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+/* main { */
+  /* width: 80%;
+  margin-left: 10%;
+  margin-right: 10%; */
+/* } */
+.firstSection{
+  background-image:url("../Image/firstSectionImage.jpg");
+  height: 76vh;
+}
+.firstSection h2{
+  color: white;
+  font-size: 50px;
+  padding-top: 200px;
+  padding-left: 200px;
+  font-family: 'Chango', cursive;
+}
+
+.firstSection p{
+  color: white;
+  font-size: 30px;
+  padding-left: 300px;
+  padding-top: 40px;
+  font-family: 'Blinker', sans-serif;
+}
+/* ############################Second Section ############################ */
+.secondSection{
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+  height: 80vh; /* make change latter */
+    
+}
+.buttonWithDes{
+  padding: 20px;
+  display: block;
+  width: 80%; 
+  float: left;
+}
+.buttonWithDes h3{
+  font-size: 30px;
+  color: black;
+  width: bold;
+  margin-bottom: 10px;
+}
+.buttonWithDes p{
+ font-size: 15px;
+  color: black;
+  margin-bottom: 10px;
+}
+
+.secondSection button{
+  float: right;
+  margin-right: 50px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  margin-top: 60px;
+  background-color: #23689b;
+  color: #DDDD;
+  border-radius: 10px;
+  
+}
+.secondSection button:hover{
+  background-color:#094d81;
+}
+.images{
+  display: inline-block;
+  width: 100%;
+}
+.images img{
+  margin-top: 50px;
+  width:24.5% ;
+  padding-left: 10px;
+}
+.paragraph{
+  /* display: inline-block;  */
+  width: 100%;
+}
+.paragraph p{
+  display: inline-block;
+  margin-top: 5px;
+  /* width:24.5% ; */
+  padding-left: 15px;
+  margin-bottom: 20px;
+}
+.paragraph div{
+  /* margin-left: 15px; */
+  display: inline-block;
+  width:24.5% ;
+
+}
+.paragraph div h4{
+  margin-top: 10px;
+  margin-left: 15px;
+  font-size: 18px;
+  font-weight: bold;
+}
+.freeZone h2{
+margin-left: 27%;
+margin-top: 10%;
+margin-bottom: 15%;
+border: brown 2px outset ;
+display: inline-block;
+padding: 15px;
+color: #094d81;
+  font-size: 50px;
+    font-family: 'Chango', cursive;
+}
+/* ############################Third Section ############################ */
+.thirdSection{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 80vh; /* make change latter */
+}
+.imageThree img{
+  width: 50%;
+  float: right;
+}
+.paragraphThree p{
+  width: 48%;
+  float: left;
+}
+.paragraphThree h5{
+  margin-bottom: 10px;
+  font-size: 20px;
+  width: 48%;
+  font-weight: bold;
+  text-align: justify;
+}
+.thirdButton button{
+  margin-left: 35%;
+  margin-top: 20px;
+   padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  background-color: #23689b;
+  color: #DDDD;
+  border-radius: 10px;
+}
+.thirdButton button:hover{
+  background-color:#094d81;
+}
+.thirdButton button a{
+   text-decoration: none;
+  color: rgb(196, 193, 193);
 }
