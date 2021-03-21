@@ -1,6 +1,164 @@
 /* ######################################Main################################################# */
-main {
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
+header {
+  margin-bottom: 0px;
+  background-color: rgba(63, 62, 62, 0.6);
+    position: sticky;
+}
+
+.firstSection{
+  background-image:url("../Image/firstSectionImage.jpg");
+  height: 110vh;
+  margin-top: -150px;
+  
+}
+.firstSection h2{
+  color: white;
+  font-size: 50px;
+  padding-top: 250px;
+  padding-left: 200px;
+  font-family: 'Chango', cursive;
+}
+
+.firstSection p{
+  color: white;
+  font-size: 30px;
+  padding-left: 200px;
+  padding-top: 30px;
+  font-family: 'Montserrat', sans-serif;
+}
+/* ############################Second Section ############################ */
+.secondSection{
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
+  height: 80vh; 
+  margin-bottom: 90px;
+  margin-top: -150px;
+background-color: white;
+    
+}
+.buttonWithDes{
+  padding: 20px;
+  display: block;
+  width: 80%; 
+  float: left;
+}
+.buttonWithDes h3{
+  font-size: 25px;
+  color: #23689b;
+  font-weight: bold;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+.buttonWithDes p{
+ font-size: 15px;
+  color: black;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 10px;
+}
+
+.secondSection button{
+  float: right;
+  margin-right: 50px;
+  padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  margin-top: 60px;
+  background-color: #23689b;
+  color: #DDDD;
+  border-radius: 10px;
+  
+}
+.secondSection button:hover{
+  background-color:#094d81;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.images{
+  display: inline-block;
+  width: 100%;
+}
+.images img{
+  margin-top: 50px;
+  width:24.5% ;
+  padding-left: 10px;
+}
+.paragraph{
+  width: 100%;
+}
+.paragraph p{
+  display: inline-block;
+  margin-top: 5px;
+  padding-left: 15px;
+  font-family: 'Montserrat', sans-serif;
+  margin-bottom: 20px;
+  font-size: 15px;
+}
+.paragraph div{
+  display: inline-block;
+  width:24.5% ;
+
+}
+.paragraph div h4{
+  margin-top: 10px;
+  margin-left: 15px;
+  color: #23689b;
+  font-size: 18px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+}
+
+/* ############################Third Section ############################ */
+.thirdSection{
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 70vh;
+}
+.imageThree img{
+  width: 50%;
+  float: right;
+}
+.paragraphThree p{
+  width: 48%;
+  font-family: 'Montserrat', sans-serif;
+  float: left;
+  font-size: 15px;
+}
+.paragraphThree h5{
+  margin-bottom: 10px;
+  color: #23689b;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 25px;
+  width: 48%;
+  font-weight: bold;
+  text-align: justify;
+}
+.thirdButton button{
+  margin-left: 35%;
+  margin-top: 20px;
+   padding-right: 25px;
+  padding-left: 25px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  margin-bottom: 50px;
+  font-size: 15px;
+  background-color: #23689b;
+  color: #DDDD;
+  border-radius: 10px;
+}
+.thirdButton button:hover{
+  background-color:#094d81;
+  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+
+}
+.thirdButton button a{
+   text-decoration: none;
+  color: rgb(196, 193, 193);
 }
