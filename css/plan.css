@@ -1,0 +1,108 @@
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORM <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+.address{
+text-align: center;
+font-size: 30px;
+margin-top: 30px;
+}
+
+.form{
+width: 45%;
+margin-left: auto; margin-right: auto; margin-top: 30px;
+font-size: 15px;
+line-height: 3;
+}
+
+.form fieldset{
+    margin: 5px;
+    padding-right: 15px; padding-left: 15px; padding-bottom: 15px;
+    border-radius: 10px;
+    background-color: rgba(243, 243, 243, 0.85);
+    border: rgb(44, 43, 43) solid 2px;
+
+}
+
+.form legend{
+    margin-left: 20px;
+    font-size: 20px; font-weight: bold;
+}
+
+.form label{
+    margin-left:20px;
+}
+
+.formData{
+    margin-left: 50px;
+}
+
+.numberInput{
+    width: 120px;
+}
+
+::placeholder{
+    font-size: 10px;
+}
+
+.submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    padding-right: 30px;
+    padding-left: 30px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: rgb(44, 43, 43);
+    color: whitesmoke;
+}
+
+.submit:hover{
+    background-color: rgb(194, 194, 194);
+    color: rgb(44, 43, 43);
+    box-shadow: 3px 3px 7px rgba(128, 128, 128, 0.5), 3px 3px 7px rgba(133, 133, 133, 0.5);;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> RESULTS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+
+.result{
+    width: 80%;
+    margin-top: 30px;
+    margin-left: auto; margin-right: auto;
+    border: rgb(44, 43, 43) solid 2px;
+    text-align: center;
+}
+
+#textResult{
+    width: 100%;
+    margin-bottom: 15px;
+
+}
+
+#videoResult{
+    width:50%;
+    float: left;
+}
+
+#videoResult img{
+    width:300px;
+}
+
+#pdfResult{
+    width:50%;
+    float: left;
+}
+
+#pdfResult img{
+    width:300px;
+}
+
+
+
+footer{
+    clear: both;
+}

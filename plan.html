@@ -9,6 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header-footer.css">
+    <link rel="stylesheet" href="css/plan.css">
     <title>2FIT</title>
     <link rel="shortcut icon" href="./Image/2fit logo.png" type="image/x-icon">
 
@@ -41,44 +42,52 @@
             <form>
                 <fieldset>
                     <legend>Personal Data</legend>
-                    <label for="">Name</label>
+                    <section class="formData">
+                        <label for="">Name</label>
                     <input type="text" name="name" placeholder="Please type your name">
                     <label for="">Age</label>
-                    <input type="number" name="age" placeholder="Your age">
+                    <input class="numberInput" type="number" name="age" placeholder="Your age">
+                    <br>
                     <label for="">Gender</label>
                     <select type="" name="gender">
                         <option value="female">Female</option>
                         <option value="male">Male</option>
                     </select>
+                    <br>
                     <label for="">Weight</label>
-                    <input type="number"name="weight"placeholder="Weight in Kg">
+                    <input class="numberInput" type="number"name="weight"placeholder="Weight in Kg">
                     <label for="">Height</label>
-                    <input type="number"name="height"placeholder="Height in M">
+                    <input class="numberInput" type="number"name="height"placeholder="Height in M">
+                    <br>
                     <label for="">How active are you?</label>
                     <select type=""name="active">
                         <option value="lazy">Lazy person</option>
                         <option value="active">Active person</option>
                     </select>
+                    <br>
                     <label for="">What is your goal?</label>
                     <select type=""name="goal">
                         <option value="bodyBuilding">Body building</option>
                         <option value="loseWeight">Losing weight</option>
                         <option value="gainWeight">Gain weight</option>
                     </select>
+                    <br>
                     <label for="">Do you want to use equipment?</label>
                     <select type=""name="equipment">
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                     </select>
-                    <input  type="submit" value="lets GO">
+                    </section>
+                    
                 </fieldset>
+                <input class="submit"  type="submit" value="lets GO!">
             </form>
         </section>
 
         <section class="result">
-         <section id="textResult">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</section>
-         <section id="videoResult"><img src="./Image/fb-icon.png" alt="" srcset=""></section>
-         <section id="pdfResult"><img src="./Image/mail-icon.png" alt="" srcset=""></section>
+            <section id="textResult">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</section>
+            <section id="videoResult"><img src="./Image/fb-icon.png" alt="" srcset=""></section>
+            <section id="pdfResult"><img src="./Image/mail-icon.png" alt="" srcset=""></section>
         </section>
     </main>
 
