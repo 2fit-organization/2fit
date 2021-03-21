@@ -2,14 +2,12 @@ main {
     width: 80%;
     margin: auto;
     overflow: hidden;
-
 }
 
 .left-section {
 width: 20%;
 float: left;
 padding: 20px;
-
 }
 
 .middle-section {
@@ -32,52 +30,65 @@ margin-top: 5px;
 .products-section-header{
 margin-bottom: 20px;
 }
-.products-section-header h2 {
+.Supplemnts-products-section-header h2,
+.Equipments-products-section-header h2{
 font-size: 18px;
 font-weight: bold;
 }
 
-.product {
+.Supplemnts-product,
+.Equipments-product {
     padding: 10px;
     overflow: hidden;
     margin-bottom: 30px;
+
+    /* clear: both; */
 }
-.product:hover {
+.Supplemnts-product:hover,
+.Equipments-product:hover {
 
 }
 
-.product-img {
+.Supplemnts-product-img,
+.Equipments-product-img {
     float: left;
     width: 15%;
 }
-.product-img img {
+.Supplemnts-product-img img ,
+.Equipments-product-img img {
 width: 70px   
 }
-.product-info {
+.Supplemnts-product-info,
+.Equipments-product-info {
     float: left;
     width: 65%;
     padding-right: 1%;
 }
-.product-info h2{
+.Supplemnts-product-info h2,
+.Equipments-product-info h2{
 font-weight: bold;
 margin-bottom: 10px;
 font-size: 18px;
 }
-.product-info p{
+.Supplemnts-product-info p,
+.Equipments-product-info p{
 padding-bottom: 10px;
 font-size: 14px;
 font-weight: 300;
 }
-.product-info-price{
+.Supplemnts-product-info-price,
+.Equipments-product-info-price{
 font-size: 18px !important;
 font-weight: 700 !important;
 }
-.product-button-div {
+.Supplemnts-product-button-div,
+.Equipments-product-button-div {
     float: left;
     width: 20%;
     
 }
-.product-button {
+.Supplemnts-product-button,
+.Equipments-product-button {
     display: block;
     margin-left: auto;
     margin-right: auto;
