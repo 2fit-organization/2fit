@@ -37,57 +37,62 @@
     </header>
 
     <main>
-        <section class="address"><h1>Get your plan!</h1></section>
+        <section class="address"><h1>Answer the following questions to get your personalized workout & diet plans</h1></section>
         <section class="form">
             <form id="form">
                 <fieldset>
                     <legend>Personal Data</legend>
                     <section class="formData">
-                        <label for="">Name</label>
-                    <input type="text" name="name" placeholder="Please type your name">
-                    <label for="">Age</label>
-                    <input class="numberInput" type="number" name="age" placeholder="Your age">
+                        <label for="">Name:</label>
+                    <input type="text" name="name" placeholder="Please type your name" required>
                     <br>
-                    <label for="">Gender</label>
+                    <label for="">Age:</label>
+                    <input class="numberInput" type="number" name="age" placeholder="Your age" min="16" max="100" required>
+                    <br>
+                    <label for="">Gender:</label>
                     <select type="" name="gender">
                         <option value="female">Female</option>
                         <option value="male">Male</option>
                     </select>
                     <br>
-                    <label for="">Weight</label>
-                    <input class="numberInput" type="number"name="weight"placeholder="Weight in Kg">
-                    <label for="">Height</label>
-                    <input class="numberInput" type="number"name="height"placeholder="Height in M">
+                    <label for="">Weight:</label>
+                    <input class="numberInput" type="number"name="weight"placeholder="Weight in Kg" min="20" max="300" step="0.1" required>
+                    <label for="">Height:</label>
+                    <input class="numberInput" type="number"name="height"placeholder="Height in M" min="1" max="2.5" step="0.01" required>
                     <br>
-                    <label for="">How active are you?</label>
-                    <select type=""name="active">
-                        <option value="lazy">Lazy person</option>
-                        <option value="active">Active person</option>
+                    <label for="">What kind of people are you?</label>
+                    <select type=""name="active" required>
+                        <option value="" disabled selected>---Choose Your Type---</option>
+                        <option value="lazy">A Lazy person</option>
+                        <option value="active">An Active person</option>
                     </select>
                     <br>
                     <label for="">What is your goal?</label>
-                    <select type=""name="goal">
-                        <option value="bodyBuilding">Body building</option>
-                        <option value="loseWeight">Losing weight</option>
-                        <option value="gainWeight">Gain weight</option>
+                    <select type=""name="goal" required>
+                        <option value="" disabled selected>---Set Your Goal---</option>
+                        <option value="loseWeight">Losing Weight</option>
+                        <option value="gainWeight">Gaining Weight</option>
+                        <option value="bodybuilding">Bodybuilding</option>
                     </select>
                     <br>
                     <label for="">Do you want to use equipment?</label>
                     <select type=""name="equipment">
+                        <option value="" disabled selected>---Choose---</option>
                         <option value="yes">Yes</option>
                         <option value="no">No</option>
                     </select>
                     </section>
+                    <p>* please fill the required feilds</p>
                     
                 </fieldset>
-                <input class="submit"  type="submit" value="lets GO!">
+                <input id="click" class="submit"  type="submit" value="lets GO!">
             </form>
         </section>
 
         <section class="result">
-            <section id="textResult">Lorem ipsum dolor sit amet consectetur, adipisicing elit.</section>
-            <section id="videoResult"><img src="./Image/fb-icon.png" alt="" srcset=""></section>
-            <section id="pdfResult"><img src="./Image/mail-icon.png" alt="" srcset=""></section>
+            <section id="textResult"></section>
+            <section id="videoResult"></section>
+            <section id="pdfResult"></section>
         </section>
     </main>
 
@@ -143,7 +148,7 @@
             </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.4/dist/Chart.min.js"></script>
-    <script src="js/plan.js"></script>
+    <script src="./js/plan.js"></script>
 </body>
 
 </html>

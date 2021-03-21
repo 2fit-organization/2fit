@@ -2,34 +2,51 @@
 
 
 .address{
-text-align: center;
-font-size: 30px;
-margin-top: 30px;
+    margin-left: auto; margin-right: auto;
+    width: 45%;
+    text-align: center;
+    font-size: 22px;
+    margin-top: 30px;
+    font-weight: bold;
+    color: rgb(44, 43, 43);
 }
 
 .form{
-width: 45%;
-margin-left: auto; margin-right: auto; margin-top: 30px;
-font-size: 15px;
-line-height: 3;
+    width: 45%;
+    margin-left: auto; margin-right: auto; margin-top: 10px;
+    font-size: 15px;
+    line-height: 2.7;
 }
 
 .form fieldset{
     margin: 5px;
     padding-right: 15px; padding-left: 15px; padding-bottom: 15px;
-    border-radius: 10px;
-    background-color: rgba(243, 243, 243, 0.85);
+    border-radius: 5px;
+    background-color: rgba(235, 233, 231, 0.692);
     border: rgb(44, 43, 43) solid 2px;
 
 }
 
 .form legend{
-    margin-left: 20px;
-    font-size: 20px; font-weight: bold;
+    margin-left: 18px;
+    font-size: 20px;
+    padding-right: 10px; padding-left: 10px;
+    color: rgb(44, 43, 43);
 }
 
+
 .form label{
-    margin-left:20px;
+    margin-left:12px;
+    color: rgb(44, 43, 43);
+}
+
+.form input{
+    font-size: 12px;
+}
+
+.form label:after {
+    content:'*';
+    color: rgb(172, 0, 0);
 }
 
 .formData{
@@ -41,7 +58,22 @@ line-height: 3;
 }
 
 ::placeholder{
-    font-size: 10px;
+    font-size: 12px;
+}
+
+.form fieldset select{
+    font-size: 12px; color: gray;
+
+}
+
+.form fieldset select option{
+ color: black;
+}
+
+.form fieldset p{
+    color: rgb(172, 0, 0);
+    font-size: 12px;
+    margin-left: 60px;
 }
 
 .submit{
@@ -53,17 +85,16 @@ line-height: 3;
     padding-left: 30px;
     padding-top: 5px;
     padding-bottom: 5px;
-    font-size: 15px;
-    border-radius: 5px;
+    font-size: 20px;
+    border-radius: 3px;
     border-style: none;
     background-color: rgb(44, 43, 43);
     color: whitesmoke;
 }
 
 .submit:hover{
-    background-color: rgb(194, 194, 194);
-    color: rgb(44, 43, 43);
-    box-shadow: 3px 3px 7px rgba(128, 128, 128, 0.5), 3px 3px 7px rgba(133, 133, 133, 0.5);;
+    background-color: rgba(44, 43, 43, 0.75);
+    box-shadow: 3px 3px 7px rgba(128, 128, 128, 0.5);
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> RESULTS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
