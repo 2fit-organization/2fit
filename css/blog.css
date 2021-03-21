@@ -3,7 +3,7 @@
     width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-    height: 230vh;
+    height: 100%vh;
 
 }
 
@@ -25,7 +25,7 @@ float: right;
 margin-left: 10px;
 margin-top: 50px;
 }
-.mainBlog p::first-letter {
+.firstParaghraph p::first-letter {
 font-family: 'Courier New', Courier, monospace;
 font-size: 70px;
 color:gray;
@@ -36,7 +36,7 @@ float: left;
 margin: 10px;
 margin-bottom: 0px;
 
-margin-left: 0%;
+margin-left: 55px;
 }
 /* #############################Second Section####################### */
 .suggestSection{
@@ -97,5 +97,23 @@ margin-bottom: 20px;
 .paragraph div button a{
 text-decoration: none;
   color: #DDDD;
+
+}
+.secondParaghraph h3{
+margin-left: 55px;
+margin-top: 20px;
+margin-bottom: 20px;
+font-size: 20px;
+color: #053050;
+font-weight: bold;
+
+}
+.secondParaghraph h4{
+margin-left: 55px;
+margin-top: 10px;
+margin-bottom: 10px;
+font-size: 20px;
+font-weight: bold;
+color: #053050;
 
 }
