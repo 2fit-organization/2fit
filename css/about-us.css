@@ -1,0 +1,63 @@
+
+.mainTitle{
+    text-align: center;
+    font-size: 40px;
+    margin-top: 60px; margin-bottom: 60px;
+    color: rgb(44, 43, 43);
+    font-weight: bolder;
+}
+
+.team{
+    width: 80%;
+    margin-left: auto; margin-right: auto;
+}
+
+.members{
+    float: left;
+    width: 25%;
+    text-align: center;
+}
+
+.memberImage{
+    height: 120px;
+    margin-bottom: 15px;
+}
+
+.members h4{
+    font-size: 15px; color: #23689b;
+    text-shadow : 1px 1px 2px rgba(128, 128, 128, 0.788), 1px 1px 2px rgba(133, 133, 133, 0.795);
+    margin-bottom: 20px; 
+}
+
+.members p{
+    font-size: 13px;
+    line-height: 1.5;
+    color: rgb(44, 43, 43);
+    margin-right: 30px; margin-left: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.members div{
+    font-size: 11px;
+    line-height: 1.7;
+    color: rgb(44, 43, 43);
+    margin-right: 30px; margin-left: 30px;
+    text-align: left;
+    margin-bottom: 30px;
+}
+
+.members div a{
+    text-decoration: none;
+    color: rgb(71, 71, 71);
+}
+
+.members div a:hover{
+    text-decoration: none;
+    color: rgb(141, 141, 141); font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+footer{
+    clear: both;
+}
