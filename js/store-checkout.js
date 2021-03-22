@@ -19,25 +19,22 @@ function Product(title, description, price, image_path, type, goal) {
   this.image_path = `Image/products/${image_path}`;
   this.type = type;
   this.goal = goal;
+  this.render();
   productsArray.push(this);
 }
 
 ///////////////////////////Constructer prototypes methods/////////////////////////////////
 Product.prototype.render = function () {
-  this.show_product(this.type);
 
-};
-Product.prototype.show_product = function (choice) {
-
-  let Supplemnts_products_container = document.getElementById(`${choice}-products-container`);
+  let Supplemnts_products_container = document.getElementById(`${this.type}-products-container`);
   let Supplemnts_product = document.createElement('div');
-  Supplemnts_product.className = `${choice}-product ${this.goal}`;
+  Supplemnts_product.className = `${this.type}-product ${this.goal}`;
   Supplemnts_products_container.appendChild(Supplemnts_product);
 
   ///////// img
 
   let Supplemnts_product_img = document.createElement('div');
-  Supplemnts_product_img.className = `${choice}-product-img`;
+  Supplemnts_product_img.className = `${this.type}-product-img`;
   Supplemnts_product.appendChild(Supplemnts_product_img);
   let Supplemnts_product_img_img = document.createElement('img');
   Supplemnts_product_img_img.src = this.image_path;
@@ -47,17 +44,17 @@ Product.prototype.show_product = function (choice) {
   ///////// info
 
   let Supplemnts_product_info = document.createElement('div');
-  Supplemnts_product_info.className = `${choice}-product-info`;
+  Supplemnts_product_info.className = `${this.type}-product-info`;
   let Supplemnts_product_info_h2 = document.createElement('h2');
-  Supplemnts_product_info_h2.className = `${choice}-product-info-heading`;
+  Supplemnts_product_info_h2.className = `${this.type}-product-info-heading`;
   Supplemnts_product_info_h2.innerHTML = this.title;
   Supplemnts_product_info.appendChild(Supplemnts_product_info_h2);
   let Supplemnts_product_info_description = document.createElement('p');
-  Supplemnts_product_info_description.className = `${choice}-product-info-description`;
+  Supplemnts_product_info_description.className = `${this.type}-product-info-description`;
   Supplemnts_product_info_description.innerHTML = this.description;
   Supplemnts_product_info.appendChild(Supplemnts_product_info_description);
   let Supplemnts_product_info_price = document.createElement('p');
-  Supplemnts_product_info_price.className = `${choice}-product-info-price`;
+  Supplemnts_product_info_price.className = `${this.type}-product-info-price`;
   Supplemnts_product_info_price.innerHTML = this.price;
   let test = document.createElement('p');
   test.textContent = this.goal;
@@ -68,18 +65,28 @@ Product.prototype.show_product = function (choice) {
   ///////// btn
 
   let Supplemnts_product_button_div = document.createElement('div');
-  Supplemnts_product_button_div.className = `${choice}-product-button-div`;
+  Supplemnts_product_button_div.className = `${this.type}-product-button-div`;
+  let Supplemnts_product_button_span = document.createElement('span');
+  Supplemnts_product_button_span.textContent = 'Quantity:';
+  Supplemnts_product_button_span.className = 'quantity';
+  Supplemnts_product_button_div.appendChild(Supplemnts_product_button_span);
+  let Supplemnts_product_button_input = document.createElement('input');
+  Supplemnts_product_button_input.className = 'quantity';
+  Supplemnts_product_button_input.type = 'number';
+  Supplemnts_product_button_div.appendChild(Supplemnts_product_button_input);
   let Supplemnts_product_button = document.createElement('button');
-  Supplemnts_product_button.className = `${choice}-product-button`;
+  Supplemnts_product_button.className = `${this.type}-product-button`;
   Supplemnts_product_button.type = 'submit';
   Supplemnts_product_button.value = JSON.stringify(this);
   Supplemnts_product_button.name = this.title;
   Supplemnts_product_button.innerHTML = 'Add to Cart';
-  Supplemnts_product_button.id = `${choice}-product-button`;
-  Supplemnts_product_button_div.appendChild(Supplemnts_product_button);
+  Supplemnts_product_button.id = `${this.type}-product-button`;
+  Supplemnts_product_button_div.appendChild(Supplemnts_product_button)
   Supplemnts_product.appendChild(Supplemnts_product_button_div);
   console.log(Supplemnts_product_button.id);
+
 };
+
 Product.prototype.to_localstorage = function () {
 
 };

@@ -15,16 +15,16 @@ function CTTHandler(event) {
     update_cart();
     console.log(cart);
   }
-    
+
 }
 
 function update_cart() {
-    checkout_table_tbody.textContent = '';
+  checkout_table_tbody.textContent = '';
   for (let i = 0; i < cart.length; i++) {
     //   console.log(cart[i].title);
     //   console.log(cart[i].image_path);
     //   console.log(cart[i].price);
-    
+
     /////tr
     let checkout_table_tbody_tr = document.createElement('tr');
     checkout_table_tbody_tr.name = cart[i].title;
@@ -48,7 +48,7 @@ function update_cart() {
     let checkout_table_tbody_td_delete = document.createElement('td');
     checkout_table_tbody_td_delete.textContent = 'Delete';
     checkout_table_tbody_td_delete.className = 'Delete';
-    checkout_table_tbody_td_delete.id = 'Delete'
+    checkout_table_tbody_td_delete.id = 'Delete';
     checkout_table_tbody_td_delete.name = i;
     checkout_table_tbody_tr.appendChild(checkout_table_tbody_td_delete);
   }
