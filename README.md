@@ -37,16 +37,16 @@ A web application project oriented to people who have fit related goals but need
 ![About-us-wirefram](./Image/WireFrames/about-us-page-wireframe.jpg);
 
 #### blog
-![blog-wirefram](./Image/WireFrames/wireframe Blog.jpg);
+![blog-wirefram](./Image/WireFrames/wireframe-Blog.jpg);
 
 #### plan
-![plan-wirefram](./Image/WireFrames/wireframe Plan.jpg);
+![plan-wirefram](./Image/WireFrames/wireframe-Plan.jpg);
 
 #### store
-![store-wirefram](./Image/WireFrames/wireframe Product .jpg);
+![store-wirefram](./Image/WireFrames/wireframe-Product.jpg);
 
 #### cart
-![cart-wirefram](./Image/WireFrames/wireframe Checkout Page.jpg);
+![cart-wirefram](./Image/WireFrames/wireframe-Checkout-Page.jpg);
 
 #### chart
-![chart-wirefram](./Image/WireFrames/wireframe Chart.jpg);
+![chart-wirefram](./Image/WireFrames/wireframe-Chart.jpg);
