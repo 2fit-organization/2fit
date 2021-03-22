@@ -3,7 +3,6 @@ main {
     margin: auto;
     overflow: hidden;
 }
-
 .left-section {
 width: 20%;
 float: left;
@@ -17,14 +16,17 @@ padding: 20px;
 overflow: auto; 
 }
 
-.middle-section-header {
+.middle-section-header,
+.left-section-header {
 margin-bottom: 20px;
 }
-.middle-section-header h1 {
+.middle-section-header h1,
+.left-section-header h1 {
 font-size: 20px;
 font-weight: bold;
 }
-.middle-section-header hr {
+.middle-section-header hr,
+.left-section-header hr {
 margin-top: 5px;
 }
 .products-section-header{
@@ -34,8 +36,14 @@ margin-bottom: 20px;
 .Equipments-products-section-header h2{
 font-size: 18px;
 font-weight: bold;
+margin-bottom: 10px;
 }
 
+.Supplemnts-products-container, 
+.Equipments-products-container {
+
+
+}
 .Supplemnts-product,
 .Equipments-product {
     padding: 10px;
@@ -113,6 +121,61 @@ padding: 20px;
 
 }
 
-.product-button {
-    
+.right-section-div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: #dddddd;
+    color: black;
+    padding: 20px;
+    line-height: 1.4;
+}
+
+.Checkout-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+    /* background-color: rgb(44, 43, 43); */
+    background-color: #23689b;
+    color: whitesmoke;
+    cursor: pointer;
+    /* margin-top: 25%; */
+}
+
+.Supplemnts-or-Equipments,
+.weight-loss-maintain-gain {
+    width: 100%;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+.filter-form-reset,
+.filter-form-submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+    /* background-color: rgb(44, 43, 43); */
+    background-color: #23689b;
+    color: whitesmoke;
+    cursor: pointer;
+    /* margin-top: 25%; */
 }

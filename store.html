@@ -33,8 +33,31 @@
     </header>
 
     <main>
+        <!-- #################### left-section #################### -->
         <section class="left-section" id="left-section">
-            <p>This is the left section</p>
+            <div class="left-section-header" id="left-section-header">
+                <h1>Filter</h1>
+                <hr>
+            </div>
+            <form action="" id="filter-form">
+                <label for="Supplemnts-or-Equipments">Choose a Product type:</label>
+                <select class="Supplemnts-or-Equipments" id="Supplemnts_or_Equipments">
+                    <!-- <option name='option' value="White"></option> -->
+                    <option name='option' value="Supplemnts">Supplemnts</option>
+                    <option name='option' value="Equipments">Equipments</option>
+                </select>
+                <label for="weight-loss-maintain-gain">Choose Your goal:</label>
+                <select class="weight-loss-maintain-gain" id="weight_loss_maintain_gain">
+                    <!-- <option value="White"></option> -->
+                    <option value="Weight-loss">Weight loss</option>
+                    <option value="Gain-muscle">Gain muscle</option>
+                    <option value="Maintain-weight">Maintain weight</option>
+                </select>
+
+                <input class="filter-form-submit" type="submit">
+            </form>
+            <button class="filter-form-reset" id="filter-form-reset">Reset Filtered data</button>
+
         </section>
         <!-- #################### middle-section #################### -->
         <section class="middle-section" id="middle-section">
@@ -47,7 +70,7 @@
                 <div class="Supplemnts-products-section-header" id="Supplemnts-products-section-header">
                     <h2>Supplemnts</h2>
                 </div>
-                <div class="Supplemnts-product" id="Supplemnts-product">
+                <!-- <div class="Supplemnts-product" id="Supplemnts-product">
                     <div class="Supplemnts-product-img" id="Supplemnts-product-img">
                         <img src="Image/products/Extreme-Gainer-Blend.jpg" alt="">
                     </div>
@@ -89,14 +112,14 @@
                     <div class="Supplemnts-product-button-div" id="Supplemnts-product-button-div">
                         <button class="Supplemnts-product-button">Add to Cart</button>
                     </div>
-                </div>
+                </div> -->
             </div>
             <!-- ################# Equipments @@@@@@@@@@@@@@@@@@@@@ -->
             <div class="Equipments-products-container" id="Equipments-products-container">
                 <div class="Equipments-products-section-header" id="Equipments-products-section-header">
                     <h2>Equipments</h2>
                 </div>
-                <div class="Equipments-product" id="Equipments-product">
+                <!-- <div class="Equipments-product" id="Equipments-product">
                     <div class="Equipments-product-img" id="Equipments-product-img">
                         <img src="Image/products/Extreme-Gainer-Blend.jpg" alt="">
                     </div>
@@ -138,12 +161,15 @@
                     <div class="Equipments-product-button-div" id="Equipments-product-button-div">
                         <button class="Equipments-product-button">Add to Cart</button>
                     </div>
-                </div>
+                </div> -->
             </div>
         </section>
         <!-- #################### -->
-        <section class="right-section">
-            <p>This is the right section</p>
+        <section class="right-section" id="right-section">
+            <!-- <p>This is the right section</p> -->
+            <div id="Checkout-btn-div">
+                <!-- <a href="cart.html"> <button class="Checkout-btn">Checkout >></button></a> -->
+            </div>
         </section>
     </main>
 
