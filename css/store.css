@@ -3,6 +3,9 @@ main {
     margin: auto;
     overflow: hidden;
 }
+a {
+    text-decoration: none;
+}
 .left-section {
 width: 20%;
 float: left;
