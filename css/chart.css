@@ -1,0 +1,22 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .titleHeader{
+      height: 50vh;
+  }
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color:#23689b;
+}
+h4{
+    text-align: center;
+    font-size: 15px;
+}
+
+
