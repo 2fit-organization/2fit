@@ -64,16 +64,43 @@ Product.prototype.render = function () {
 
   ///////// btn
 
+  // let Supplemnts_product_button_div = document.createElement('div');
+  // Supplemnts_product_button_div.className = `${this.type}-product-button-div`;
+  // let Supplemnts_product_button_span = document.createElement('span');
+  // Supplemnts_product_button_span.textContent = 'Quantity:';
+  // Supplemnts_product_button_span.className = 'quantity';
+  // Supplemnts_product_button_div.appendChild(Supplemnts_product_button_span);
+  // let Supplemnts_product_button_input = document.createElement('input');
+  // Supplemnts_product_button_input.className = 'quantity';
+  // Supplemnts_product_button_input.type = 'number';
+  // Supplemnts_product_button_div.appendChild(Supplemnts_product_button_input);
+  // let Supplemnts_product_button = document.createElement('button');
+  // Supplemnts_product_button.className = `${this.type}-product-button`;
+  // Supplemnts_product_button.type = 'submit';
+  // Supplemnts_product_button.value = JSON.stringify(this);
+  // Supplemnts_product_button.name = this.title;
+  // Supplemnts_product_button.innerHTML = 'Add to Cart';
+  // Supplemnts_product_button.id = `${this.type}-product-button`;
+  // Supplemnts_product_button_div.appendChild(Supplemnts_product_button)
+  // Supplemnts_product.appendChild(Supplemnts_product_button_div);
+  // console.log(Supplemnts_product_button.id);
+
+  /// form
+  let Supplemnts_product_form = document.createElement('form');
   let Supplemnts_product_button_div = document.createElement('div');
   Supplemnts_product_button_div.className = `${this.type}-product-button-div`;
-  let Supplemnts_product_button_span = document.createElement('span');
-  Supplemnts_product_button_span.textContent = 'Quantity:';
-  Supplemnts_product_button_span.className = 'quantity';
-  Supplemnts_product_button_div.appendChild(Supplemnts_product_button_span);
+  /// label
+  let Supplemnts_product_button_label = document.createElement('label');
+  Supplemnts_product_button_label.textContent = 'Quantity:';
+  Supplemnts_product_button_label.className = 'quantity';
+  Supplemnts_product_button_label.for = 'quantity';
+  Supplemnts_product_button_div.appendChild(Supplemnts_product_button_label);
+  /// input
   let Supplemnts_product_button_input = document.createElement('input');
   Supplemnts_product_button_input.className = 'quantity';
   Supplemnts_product_button_input.type = 'number';
   Supplemnts_product_button_div.appendChild(Supplemnts_product_button_input);
+  /// btn
   let Supplemnts_product_button = document.createElement('button');
   Supplemnts_product_button.className = `${this.type}-product-button`;
   Supplemnts_product_button.type = 'submit';
@@ -81,8 +108,9 @@ Product.prototype.render = function () {
   Supplemnts_product_button.name = this.title;
   Supplemnts_product_button.innerHTML = 'Add to Cart';
   Supplemnts_product_button.id = `${this.type}-product-button`;
-  Supplemnts_product_button_div.appendChild(Supplemnts_product_button)
-  Supplemnts_product.appendChild(Supplemnts_product_button_div);
+  Supplemnts_product_button_div.appendChild(Supplemnts_product_button);
+  Supplemnts_product.appendChild(Supplemnts_product_form);
+  Supplemnts_product_form.appendChild(Supplemnts_product_button_div);
   console.log(Supplemnts_product_button.id);
 
 };
