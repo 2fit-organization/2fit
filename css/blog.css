@@ -121,3 +121,7 @@
   font-weight: bold;
   color: #053050;
 }
+
+button {
+  cursor: pointer !important;
+}
