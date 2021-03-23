@@ -1,18 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORM <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
+body{
+    background-image: url(/Image/BG2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -80vw;
+
+}
 
 .address{
-    margin-left: auto; margin-right: auto;
-    width: 45%;
+    margin-left: auto; margin-right: auto; margin-top: 50px;
+    width: 50%;
     text-align: center;
     font-size: 22px;
-    margin-top: 30px;
-    font-weight: bold;
-    color: rgb(44, 43, 43);
+    color: rgb(196, 193, 193);
 }
 
 .form{
-    width: 45%;
+    width: 50%;
     margin-left: auto; margin-right: auto; margin-top: 10px;
     font-size: 15px;
     line-height: 2.7;
@@ -22,22 +39,24 @@
     margin: 5px;
     padding-right: 15px; padding-left: 15px; padding-bottom: 15px;
     border-radius: 5px;
-    background-color: rgba(235, 233, 231, 0.692);
-    border: rgb(44, 43, 43) solid 2px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: rgb(230, 230, 230) solid 2px;
 
 }
 
 .form legend{
     margin-left: 18px;
+    padding-right: 10px; padding-left: 10px; padding-bottom: 0px;
     font-size: 20px;
-    padding-right: 10px; padding-left: 10px;
-    color: rgb(44, 43, 43);
+    position: relative; bottom:8px;
+    color: #23689b;
 }
 
 
 .form label{
-    margin-left:12px;
+    margin-left: 12px;
     color: rgb(44, 43, 43);
+    font-weight: bold ;
 }
 
 .form input{
@@ -51,6 +70,7 @@
 
 .formData{
     margin-left: 50px;
+    margin-top: -10px;
 }
 
 .numberInput{
@@ -62,7 +82,7 @@
 }
 
 .form fieldset select{
-    font-size: 12px; color: gray;
+    font-size: 12px;
 
 }
 
@@ -80,60 +100,124 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 10px;
-    padding-right: 30px;
-    padding-left: 30px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-    font-size: 20px;
+    margin-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-radius: 3px;
     border-style: none;
-    background-color: rgb(44, 43, 43);
+    background-color:#23689b;
     color: whitesmoke;
 }
 
+input[type=submit] {
+    font-size: 15px;
+}
+
 .submit:hover{
-    background-color: rgba(44, 43, 43, 0.75);
-    box-shadow: 3px 3px 7px rgba(128, 128, 128, 0.5);
+    background-color:#23679b93;
+    box-shadow: 1px 1px 3px rgba(128, 128, 128, 0.5);
 }
 
 /* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> RESULTS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
 
-
 .result{
-    width: 80%;
+    width: 50%;
     margin-top: 30px;
     margin-left: auto; margin-right: auto;
-    border: rgb(44, 43, 43) solid 2px;
     text-align: center;
 }
 
 #textResult{
-    width: 100%;
+    width: 95%;
     margin-bottom: 15px;
+    font-size: 15px;
+    font-weight: lighter;
+    color: rgb(196, 193, 193);
+    line-height: 1.8;
+    text-align: left;
+    margin-right: auto; margin-left: auto;
+}
 
+#bmiText{
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 #videoResult{
     width:50%;
     float: left;
-}
-
-#videoResult img{
-    width:300px;
+    padding-right: 7.5px;
+    margin-bottom: 30px;
 }
 
 #pdfResult{
     width:50%;
     float: left;
+    padding-left: 7.5px;
 }
 
-#pdfResult img{
-    width:300px;
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LINKS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.links{
+    clear: both;
+    width: 80%;
+    text-align: center;
+    margin-left: auto; margin-right: auto;
+    font-size: 15px;
 }
 
+#storeLink{
+    clear: both;
+    display: inline;
+    position: relative;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    float: right;
+    text-align: center;
+    color:rgb(196, 193, 193);
+    font-weight: lighter;
+}
 
+#storeLink a{
+    text-decoration: none;
+    color: #23689b;
+    font-weight: bold;
+}
+
+#storeLink a:hover{
+    text-decoration: none;
+    color: #23679bbd;
+    font-weight: bold;
+}
+
+#chartLink{
+    display: inline;
+    position: relative;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    float: left;
+    text-align: center;
+    color:rgb(196, 193, 193);
+    font-weight: lighter;
+}
+
+#chartLink a{
+    text-decoration: none;
+    color: #23689b;
+    font-weight: bold;
+}
+
+#chartLink a:hover{
+    text-decoration: none;
+    color: #23679bbd;
+    font-weight: bold;
+}
 
 footer{
     clear: both;
+    margin-top: 30px;
 }

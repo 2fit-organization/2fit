@@ -37,7 +37,7 @@
     </header>
 
     <main>
-        <section class="address"><h1>Answer the following questions to get your personalized workout & diet plans</h1></section>
+        <section id="address" class="address"><h1>Answer the following questions to get your personalized workout & diet plans</h1></section>
         <section class="form">
             <form id="form">
                 <fieldset>
@@ -72,7 +72,7 @@
                     <select type=""name="goal" required>
                         <option value="" disabled selected>---Set Your Goal---</option>
                         <option value="loseWeight">Losing Weight</option>
-                        <option value="gainWeight">Gaining Weight</option>
+                        <option value="getHealthy">Getting Healthier</option>
                         <option value="bodybuilding">Bodybuilding</option>
                     </select>
                     <br>
@@ -91,9 +91,17 @@
         </section>
 
         <section class="result">
-            <section id="textResult"></section>
+            <section id="textResult">
+                <h2 id="bmiText"></h2>
+                <h2 id="activityText"></h2>
+            </section>
             <section id="videoResult"></section>
             <section id="pdfResult"></section>
+        </section>
+
+        <section id="links">
+            <p id="storeLink"></p>
+            <p id="chartLink"></p>
         </section>
     </main>
 
