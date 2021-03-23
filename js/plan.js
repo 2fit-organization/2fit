@@ -10,10 +10,10 @@ let storeLink=document.getElementById('storeLink');
 let chartLink=document.getElementById('chartLink');
 let address=document.getElementById('address');
 
-let gainWeight=0;
+let getHealthy=0;
 let loseWeight=0;
 let bodybuilding=0;
-let goalArray=[gainWeight,loseWeight,bodybuilding];
+let goalArray=[getHealthy,loseWeight,bodybuilding];
 
 //bulindg a constructor //
 
@@ -82,7 +82,6 @@ UserData.prototype.activity=function (){
 formData.addEventListener('submit',submitHandler);
 function submitHandler(event){
   event.preventDefault();
-  userDataParse();
   let user_input=  new UserData(event.target.name.value,event.target.age.value,event.target.gender.value,event.target.weight.value,event.target.height.value,event.target.active.value,event.target.goal.value,event.target.equipment.value);
   user_input.bmiCases();
   user_input.activity();
@@ -114,7 +113,7 @@ function submitHandler(event){
   else if(event.target.gender.value === 'male' &&event.target.goal.value === 'getHealthy' && event.target.equipment.value === 'no'){
     videoResult.innerHTML='<iframe src="https://www.youtube.com/embed/DzMG4g3mLXY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     pdfResult.innerHTML= '<embed src="healthy-diet.pdf" type="application/pdf">';
-    gainWeight++;
+    getHealthy++;
   }
 
   ///// CASE 5 (M, B, E) /////----------------------------------------------
@@ -149,14 +148,14 @@ function submitHandler(event){
   else if(event.target.gender.value === 'female' && event.target.goal.value === 'getHealthy' && event.target.equipment.value === 'yes'){
     videoResult.innerHTML= '<iframe src="https://www.youtube.com/embed/siIicrZ4gng" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     pdfResult.innerHTML= '<embed src="healthy-diet.pdf" type="application/pdf">';
-    gainWeight++;
+    getHealthy++;
   }
 
   ///// CASE 10 (F, H, W.E) /////------------------------------------------------
   else if(event.target.gender.value === 'female' && event.target.goal.value === 'getHealthy' && event.target.equipment.value === 'no'){
     videoResult.innerHTML='<iframe src="https://www.youtube.com/embed/PyUP10dh8CE?list=PLQSMS0J6JbrK9fA74RqpVHkzH14qvaPYH" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     pdfResult.innerHTML= '<embed src="healthy-diet.pdf" type="application/pdf">';
-    gainWeight++;
+    getHealthy++;
   }
   ///// CASE 11 (F, B, E) /////------------------------------------------------
   else if(event.target.gender.value === 'female' && event.target.goal.value === 'bodybuilding' && event.target.equipment.value === 'yes'){
@@ -172,12 +171,24 @@ function submitHandler(event){
     bodybuilding++;
   }
   else{console.log('final else');}
-  goalArray=[gainWeight,loseWeight,bodybuilding];
+  goalArray=[getHealthy,loseWeight,bodybuilding];
   formData.remove();
   address.remove();
   externalLinks();
   localST();
 }
+
+// let car = [1,1,1,1]
+// let car2 = [1,1,1,1]
+// let caradd=[]
+// for (let i = 0; i < car.length; i++) {
+//   caradd[i] = car[i]+car2[i];
+  
+// }
+
+
+
+
 
 function externalLinks(){
   storeLink.innerHTML= 'For supplements & equipments, check out our <a href="store.html">store</a>';
@@ -185,12 +196,15 @@ function externalLinks(){
 }
 
 function localST(){
-  let userDatast=JSON.stringify(goalArray);
-  localStorage.setItem('user data',userDatast);
-}
-function userDataParse(){
-  let newUserData =localStorage.getItem('user data');
-  if(newUserData){
-    UserData.goal=JSON.parse(newUserData);
+  if(JSON.parse(localStorage.getItem('user data'))=== null){
+    localStorage.setItem('user data',JSON.stringify(goalArray));
+  } else {
+    let oldData = JSON.parse(localStorage.getItem('user data'));
+    let newDataArray=[];
+    for(let i=0;i<goalArray.length;i++){
+      newDataArray[i] = oldData[i] + goalArray[i];
+    }
+    localStorage.setItem('user data',JSON.stringify(newDataArray));
   }
 }
+

@@ -1,0 +1,28 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+  }
+  .titleHeader{
+      height: 20vh;
+  }
+h1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 7px;
+    color:#23689b;
+}
+h4{
+    text-align: center;
+    font-size: 15px;
+}
+
+.chartNew{
+    margin-left: 30%;
+    height:90vh;
+    width: 550px;
+  
+}
+
