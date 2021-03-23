@@ -13,9 +13,10 @@ update_cart();
 checkout_table_tbody.addEventListener('click', CTTHandler);
 
 function CTTHandler(event) {
-  if (event.target.id === 'Delete') {
+  if (event.target.name === 'Delete') {
     // console.log('here');
-    cart.splice(event.target.i, 1);
+    console.log(event.target.id);
+    cart.splice(event.target.id, 1);
     localStorage.setItem('cart', JSON.stringify(cart));
     update_cart();
     console.log(cart);
@@ -33,7 +34,7 @@ function update_cart() {
     /////tr
     let checkout_table_tbody_tr = document.createElement('tr');
     // checkout_table_tbody_tr.name = cart[i].title;
-    checkout_table_tbody_tr.id = i;
+    // checkout_table_tbody_tr.id = i;
     checkout_table_tbody.appendChild(checkout_table_tbody_tr);
     ///// img td
     let checkout_table_tbody_td_img = document.createElement('td');
@@ -61,8 +62,8 @@ function update_cart() {
     let checkout_table_tbody_td_delete = document.createElement('td');
     checkout_table_tbody_td_delete.textContent = 'Delete';
     checkout_table_tbody_td_delete.className = 'Delete';
-    checkout_table_tbody_td_delete.id = 'Delete';
-    checkout_table_tbody_td_delete.name = i;
+    checkout_table_tbody_td_delete.id = i;
+    checkout_table_tbody_td_delete.name = 'Delete';
     checkout_table_tbody_tr.appendChild(checkout_table_tbody_td_delete);
 
     /////// prepare the total
