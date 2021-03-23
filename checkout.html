@@ -35,28 +35,43 @@
     <main>
         <h1>Checkout</h1>
         <hr>
-        <table class="checkout_table" id="checkout_table">
-            <thead>
-                <tr>
-                    <th>Photo</th>
-                    <th>Title</th>
-                    <th>Price</th>
-                    <th>Action</th>
-                </tr>
+        <section class="table-section">
+            <table class="checkout_table" id="checkout_table">
+                <thead>
+                    <tr class="checkout_table_head_tr">
+                        <th>Photo</th>
+                        <th>Title</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
 
+                <tbody id="checkout_table_tbody">
+                    <!-- <tr>
+                                    <td><img src="image/products/CLA-Capsules.jpg" alt=""></td>
+                                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
+                                    <td>150 AED</td>
+                                    <td class="Delete">Delete</td>
+                                </tr> -->
+                </tbody>
+                <tfoot id="checkout_table_tfoot"></tfoot>
+            </table>
+        </section>
 
-            </thead>
-            <tbody id="checkout_table_tbody">
-                <!-- <tr>
-                    <td><img src="image/products/CLA-Capsules.jpg" alt=""></td>
-                    <td>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </td>
-                    <td>150 AED</td>
-                    <td class="Delete">Delete</td>
-                </tr> -->
-            </tbody>
-            <tfoot></tfoot>
-        </table>
+        <div class="Pay">
+            <p>Total price is: <span id="total_price"></span></p>
+            <P>Total Items: <span id="total_items"></span> </P>
+            <button class="Pay_button" id="clear_button">Clear</button>
+            <div class="pay_div">
+                <img src="Image/cash.png" alt="">
+                <img src="Image/bank.png" alt="">
+                <img src="Image/paypal.png" alt="">
+            </div>
+            <button class="Pay_button" id="Pay_button">Pay</button>
 
+        </div>
 
 
 

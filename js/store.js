@@ -1,32 +1,39 @@
 /* eslint-disable no-undef */
 'use strict';
 ///////////////////////////Event listners/////////////////////////////////
-middle_section.addEventListener('click', btnHandler);
+middle_section.addEventListener('submit', btnHandler);
 filter_form.addEventListener('submit', SEoptionHandler);
 filter_form_reset.addEventListener('click', FFRoptionHandler);
 
 ///////////////////////////Event listners functions/////////////////////////////////
 function btnHandler(event) {
-  if (event.target.id === 'Supplemnts-product-button' || event.target.id === 'Equipments-product-button') {
-    to_cart.push(JSON.parse(event.target.value));
-    localStorage.setItem('cart', JSON.stringify(to_cart));
-    let right_section_div = document.createElement('div');
-    right_section_div.className = 'right-section-div';
-    right_section.appendChild(right_section_div);
-    let right_section_p = document.createElement('p');
-    right_section_p.innerHTML = 'You have added <span style="color:#23689b;"> ' + event.target.name + ' </span> To the Cart, Succesfully.';
-    right_section_div.appendChild(right_section_p);
-    if (Checkout_btn_div.innerHTML === '') {
-      console.log('test');
-      let a = document.createElement('a');
-      let btn = document.createElement('button');
-      btn.className = 'Checkout-btn';
-      btn.innerText = 'Checkout';
-      a.href = 'checkout.html';
-      a.appendChild(btn);
-      Checkout_btn_div.appendChild(a);
-    }
+  event.preventDefault();
+  console.log(event.target.quantity.value);
+  console.log(event.target.hiddenbtn.value);
+  let product_obj = JSON.parse(event.target.hiddenbtn.value);
+  product_obj.pro_quantity = parseInt(product_obj.pro_quantity) + parseInt(event.target.quantity.value);
+  to_cart.push(product_obj);
+  // console.log(to_cart);
+  // console.log(typeof (event.target.hiddenbtn.value));
+  // console.log(typeof (JSON.parse(event.target.hiddenbtn.value)));
+  localStorage.setItem('cart', JSON.stringify(to_cart));
+  let right_section_div = document.createElement('div');
+  right_section_div.className = 'right-section-div';
+  right_section.appendChild(right_section_div);
+  let right_section_p = document.createElement('p');
+  right_section_p.innerHTML = 'You have added <span style="color:#23689b;"> ' + event.target.name + ' </span> To the Cart, Succesfully.';
+  right_section_div.appendChild(right_section_p);
+  if (Checkout_btn_div.innerHTML === '') {
+    console.log('test');
+    let a = document.createElement('a');
+    let btn = document.createElement('button');
+    btn.className = 'Checkout-btn';
+    btn.innerText = 'Checkout';
+    a.href = 'checkout.html';
+    a.appendChild(btn);
+    Checkout_btn_div.appendChild(a);
   }
+  // }
 }
 
 function SEoptionHandler(event) {
@@ -105,7 +112,7 @@ function call_render_products() {
   let p1 = new Product(
     'CLA Capsules',
     'Conjugated Linoleic Acid (CLA) is a naturally occurring omega-6 fatty acid, which is super-important for your everyday health. One of our most popular supplements, these softgels provide 1000mg of safflower oil with 80% CLA per serving.',
-    '57 ',
+    '57',
     'CLA-Capsules.jpg',
     'Supplemnts',
     'Weight-loss');

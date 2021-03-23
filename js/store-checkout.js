@@ -11,6 +11,7 @@ let filter_form_reset = document.getElementById('filter-form-reset');
 Checkout_btn_div.innerHTML = '';
 let filter_form = document.getElementById('filter-form');
 
+
 ///////////////////////////Constructer/////////////////////////////////
 function Product(title, description, price, image_path, type, goal) {
   this.title = title;
@@ -19,6 +20,7 @@ function Product(title, description, price, image_path, type, goal) {
   this.image_path = `Image/products/${image_path}`;
   this.type = type;
   this.goal = goal;
+  this.pro_quantity = 0;
   this.render();
   productsArray.push(this);
 }
@@ -87,6 +89,7 @@ Product.prototype.render = function () {
 
   /// form
   let Supplemnts_product_form = document.createElement('form');
+  Supplemnts_product_form.id = 'products-form';
   let Supplemnts_product_button_div = document.createElement('div');
   Supplemnts_product_button_div.className = `${this.type}-product-button-div`;
   /// label
@@ -99,19 +102,41 @@ Product.prototype.render = function () {
   let Supplemnts_product_button_input = document.createElement('input');
   Supplemnts_product_button_input.className = 'quantity';
   Supplemnts_product_button_input.type = 'number';
+  Supplemnts_product_button_input.id = 'quantity';
+  Supplemnts_product_button_input.name = 'quantity';
+  Supplemnts_product_button_input.value = '1';
+  Supplemnts_product_button_input.min = '1';
   Supplemnts_product_button_div.appendChild(Supplemnts_product_button_input);
+  /// empty box
+  let Supplemnts_product_box = document.createElement('input');
+  Supplemnts_product_box.className = `${this.type}-product-button`;
+  Supplemnts_product_box.type = 'text';
+  Supplemnts_product_box.id = 'hiddenbtn';
+  Supplemnts_product_box.name = 'hiddenbtn';
+  Supplemnts_product_box.value = JSON.stringify(this);
+  // Supplemnts_product_button.name = this.title;
+  // Supplemnts_product_button.innerHTML = 'Add to Cart';
+  // Supplemnts_product_box.id = `${this.type}-product-button`;
+  Supplemnts_product_box.style.display = 'none';
+  Supplemnts_product_button_div.appendChild(Supplemnts_product_box);
+
   /// btn
-  let Supplemnts_product_button = document.createElement('button');
+  let Supplemnts_product_button = document.createElement('input');
   Supplemnts_product_button.className = `${this.type}-product-button`;
   Supplemnts_product_button.type = 'submit';
-  Supplemnts_product_button.value = JSON.stringify(this);
-  Supplemnts_product_button.name = this.title;
-  Supplemnts_product_button.innerHTML = 'Add to Cart';
+  Supplemnts_product_button.value = 'Add to Cart';
+  // Supplemnts_product_button.name = this.title;
+  // Supplemnts_product_button.innerHTML = 'Add to Cart';
   Supplemnts_product_button.id = `${this.type}-product-button`;
+  // Supplemnts_product_button.style.display = 'none';
   Supplemnts_product_button_div.appendChild(Supplemnts_product_button);
-  Supplemnts_product.appendChild(Supplemnts_product_form);
+
+
+
   Supplemnts_product_form.appendChild(Supplemnts_product_button_div);
-  console.log(Supplemnts_product_button.id);
+  Supplemnts_product.appendChild(Supplemnts_product_form);
+  
+
 
 };
 
@@ -120,3 +145,4 @@ Product.prototype.to_localstorage = function () {
 };
 
 
+// let products_form = document.getElementById('products-form');
