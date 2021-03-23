@@ -78,6 +78,7 @@ function update_cart() {
   }
   total_price.textContent = t_price + ' JOD';
   total_items.textContent = t_quantity + ' Items';
+  // localStorage.setItem('total_quantity',JSON.stringify(t_quantity));
 
 }
 

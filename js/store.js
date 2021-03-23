@@ -27,13 +27,13 @@ function btnHandler(event) {
   right_section_div.appendChild(right_section_img);
 
   let right_section_p = document.createElement('p');
-  right_section_p.innerHTML = 'You have added <span style="color:#23689b;"> ' + product_obj.title + ' </span> To the Cart, Succesfully.';
+  right_section_p.innerHTML = 'You have added <span style="color:#23689b;"> ' + product_obj.title + ' </span> To the Cart with a quantity of <span style="color:#23689b;"> ( ' + product_obj.pro_quantity + ' ) </span>, Succesfully.';
   right_section_div.appendChild(right_section_p);
   //// btn
   let a = document.createElement('a');
   let btn = document.createElement('button');
   btn.className = 'Checkout-btn';
-  btn.innerText = 'Checkout ' + '( ' + to_cart.length + ' )';
+  btn.innerText = 'Checkout ' + '( ' + calculate_quantity() + ' )';
   a.href = 'checkout.html';
   a.appendChild(btn);
   right_section_div.appendChild(a);
@@ -108,6 +108,15 @@ function filter_choices(c1, c2, c3, c4, c5) {
   weight_maintain_opt_f(c5);
 }
 
+function calculate_quantity() {
+  let t_quantity = 0;
+  for (let i = 0; i < to_cart.length; i++) {
+
+    t_quantity = t_quantity + parseInt(to_cart[i].pro_quantity);
+
+  }
+  return t_quantity;
+}
 
 'Maintain-weight';
 'Gain-muscle';
