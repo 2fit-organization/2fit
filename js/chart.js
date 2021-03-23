@@ -4,7 +4,7 @@ var ctx = document.getElementById('myChart').getContext('2d');
 var myChart = new Chart(ctx, {
   type: 'pie',
   data: {
-    labels: ['Gain Weight', 'Lose Weigth', 'Maintain Weight'],
+    labels: ['Get Healthy', 'Lose Weigth', 'Maintain Weight'],
     datasets: [{
       label: 'Goals Statistics',
       data: chart_data,
