@@ -1,3 +1,5 @@
+<!-- /* ################## WARNING DON`T TOUCH THIS FILE !!!!!! @@@@@@@@@@@@@@@@@@@@@@@@@ */ -->
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -7,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/header-footer.css">
-    <link rel="stylesheet" href="css/about-us.css">
+    <link rel="stylesheet" href="css/plan.css">
     <title>2FIT</title>
     <link rel="shortcut icon" href="./Image/2fit logo.png" type="image/x-icon">
 
@@ -35,47 +37,72 @@
     </header>
 
     <main>
-        <h1 class="mainTitle">Meet the amazing team behind 2FIT</h1>
-        <div class="team">
-            <section class="members">
-                <img  class="memberImage" src="./Image/abdullah.png" alt="">
-                <h4>Our Team leader: <br> Abdullah AlSawalmeh</h4>
-                <p>26 years old, with M.Sc. degree in Mechatronics engineering. Abdullah is passionate about learning more about programming and he already has a great knowledge in Python programming language.</p>
-                <div>
-                    <h6> <a href="https://github.com/Abdullah-AlSawalmeh">Abdullah's GitHub </a> </h6>
-                    <h6> <a href="https://www.linkedin.com/in/abdullah-al-sawalmeh/">Abdullah's LinkedIn </a> </h6>
-                </div>
-               
+        <section id="address" class="address"><h1>Answer the following questions to get your personalized workout & diet plans</h1></section>
+        <section class="form">
+            <form id="form">
+                <fieldset>
+                    <legend>Personal Data</legend>
+                    <section class="formData">
+                        <label for="">Name:</label>
+                    <input type="text" name="name" placeholder="Please type your name" required>
+                    <br>
+                    <label for="">Age:</label>
+                    <input class="numberInput" type="number" name="age" placeholder="Your age" min="16" max="100" required>
+                    <br>
+                    <label for="">Gender:</label>
+                    <select type="" name="gender">
+                        <option value="" disabled selected>---Choose---</option>
+                        <option value="female">Female</option>
+                        <option value="male">Male</option>
+                    </select>
+                    <br>
+                    <label for="">Weight:</label>
+                    <input class="numberInput" type="number"name="weight"placeholder="Weight in Kg" min="20" max="300" step="0.01" required>
+                    <label for="">Height:</label>
+                    <input class="numberInput" type="number"name="height"placeholder="Height in M" min="1" max="2.5" step="0.01" required>
+                    <br>
+                    <label for="">What kind of people are you?</label>
+                    <select type=""name="active" required>
+                        <option value="" disabled selected>---Choose Your Type---</option>
+                        <option value="lazy">A Lazy person</option>
+                        <option value="active">An Active person</option>
+                    </select>
+                    <br>
+                    <label for="">What is your goal?</label>
+                    <select type=""name="goal" required>
+                        <option value="" disabled selected>---Set Your Goal---</option>
+                        <option value="loseWeight">Losing Weight</option>
+                        <option value="getHealthy">Getting Healthier</option>
+                        <option value="bodybuilding">Bodybuilding</option>
+                    </select>
+                    <br>
+                    <label for="">Do you want to use equipment?</label>
+                    <select type=""name="equipment">
+                        <option value="" disabled selected>---Choose---</option>
+                        <option value="yes">Yes</option>
+                        <option value="no">No</option>
+                    </select>
+                    </section>
+                    <p>* please fill the required feilds</p>
+                    
+                </fieldset>
+                <input id="click" class="submit"  type="submit" value="lets GO!">
+            </form>
+        </section>
+
+        <section class="result">
+            <section id="textResult">
+                <h2 id="bmiText"></h2>
+                <h2 id="activityText"></h2>
             </section>
-            <section class="members" >
-                <img  class="memberImage" src="./Image/ayman.png" alt="">
-                <h4>Team Member: <br> Ayman Naif</h4>
-                <p>25 years old, with B.Sc. degree in Electrical engineering. He worked as freelancer designer and video editor before joining our team. Ayman is enthusiastic about learning programming and having new experiences.</p>
-                <div>
-                    <h6> <a href="https://github.com/AymanNaif">Ayman's GitHub </a> </h6>
-                    <h6> <a href="https://www.linkedin.com/in/ayman-naif96/">Ayman's LinkedIn </a> </h6>
-                </div>
-            </section>
-            <section class="members">
-                <img  class="memberImage" src="./Image/hala.png" alt="">
-                <h4>Team Member: <br>Hala Khamayseh</h4>
-                <p>25 years old, Hala has a B.Sc. degree in Translation. She has an experience in customer services with great interpersonal skills. Having high hopes of being a web developer that promotes quality services. </p>
-                <div>
-                    <h6> <a href="https://github.com/Halakhamayseh">Hala's GitHub </a> </h6>
-                    <h6> <a href="https://www.linkedin.com/in/hala-khamayseh-a20173151/">Hala's LinkedIn </a> </h6>
-                </div>
-            </section>
-            <section class="members">
-                <img  class="memberImage" src="./Image/umamah.png" alt="">
-                <h4>Team Member: <br>Umamah Mahmoud</h4>
-                <p>27 years old, with a B.Sc. degree in Architecture. Umamah has a previous experience in multiple fields of design, dealing with advanced softwares is what's pushing her curiosity towards the world of programming. </p>
-                <div>
-                    <h6> <a href="https://github.com/umamah1mahmoud">Umamah's GitHub </a> </h6>
-                    <h6> <a href="https://www.linkedin.com/in/umamah-m/">Umamah's LinkedIn </a> </h6>
-                </div>
-            </section>
-        </div>
-        
+            <section id="videoResult"></section>
+            <section id="pdfResult"></section>
+        </section>
+
+        <section id="links">
+            <p id="storeLink"></p>
+            <p id="chartLink"></p>
+        </section>
     </main>
 
 

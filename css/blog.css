@@ -1,57 +1,58 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
 .mainBlog{
-    width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
-    height: 100%vh;
-
-}
-
-.mainBlog h2{
-font-size: 50px;
-font-weight: bold;
-color: #23689b;
-margin-top: 100px;
-margin-bottom: 70px;
-}
-
-.mainBlog p{
-margin-left:5% ;
-text-align: justify;
-font-size: 17px;
-}
-.mainBlog img{
-width:60% ;
-float: right;
-margin-left: 10px;
-}
-.firstParaghraph p::first-letter {
-font-family: 'Courier New', Courier, monospace;
-font-size: 70px;
-color:gray;
-font-family: 'Orbitron', sans-serif;}
-#mainImage{
-width:40% ;
-float: left;
-margin: 10px;
-margin-bottom: 0px;
-
-margin-left: 55px;
-}
-/* #############################Second Section####################### */
-.suggestSection{
-    display: inline-block;
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-    height: 80vh;
+  height: 100%vh;
+}
+
+.mainBlog h2{
+  font-size: 50px;
+  font-weight: bold;
+  color: #23689b;
+  margin-top: 100px;
+  margin-bottom: 70px;
+}
+
+.mainBlog p{
+  text-align: justify;
+  font-size: 17px;
+}
+.mainBlog img{
+  width:60% ;
+  float: right;
+  margin-left: 10px;
+}
+.firstParaghraph p::first-letter {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 70px;
+  color:gray;
+  font-family: 'Orbitron', sans-serif;
+}
+
+#mainImage{
+  width:40% ;
+  float: left;
+  margin: 10px;
+  margin-bottom: 0px;
+  margin-left: 55px;
+}
+
+/* #############################Second Section####################### */
+
+.suggestSection{
+  display: inline-block;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  height: 80vh;
 }
 .suggestSection h2{
-font-size: 30px;
-font-weight: bold;
-color: #23689b;
-margin-top: 100px;
-margin-bottom: 20px;
+  font-size: 30px;
+  font-weight: bold;
+  color: #23689b;
+  margin-top: 100px;
+  margin-bottom: 20px;
 }
 .images img{
   width:24.5% ;
@@ -78,42 +79,44 @@ margin-bottom: 20px;
   font-family: 'Montserrat', sans-serif;
   font-weight: bold;
 }
+
 .paragraph div button{
-  margin-left: 62%;
-  font-size: 15px;
-  padding-left: 5px;
-  padding-right: 5px;
-  padding-top: 2px;
-  padding-bottom: 2px;
-  background-color: #23689b;
-  color: #DDDD;
-  border-radius: 10px;
+  display: block;
+  margin-left: 60%;
+  margin-top: 5%;
+  padding-right: 15px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 12px;
+  border-radius: 3px;
+  border-style: none;
+  background-color:#23689b;
+  color: whitesmoke;
 }
+
 .paragraph div button:hover{
-     background-color:#094d81;
+  background-color:#094d81;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-
 }
-.paragraph div button a{
-text-decoration: none;
-  color: #DDDD;
 
+.paragraph div button a{
+  text-decoration: none;
+  color: whitesmoke;
 }
 .secondParaghraph h3{
-margin-left: 55px;
-margin-top: 20px;
-margin-bottom: 20px;
-font-size: 20px;
-color: #053050;
-font-weight: bold;
-
+  margin-left: 55px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  font-size: 20px;
+  color: #053050;
+  font-weight: bold;
 }
 .secondParaghraph h4{
-margin-left: 55px;
-margin-top: 10px;
-margin-bottom: 10px;
-font-size: 20px;
-font-weight: bold;
-color: #053050;
-
+  margin-left: 55px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color: #053050;
 }

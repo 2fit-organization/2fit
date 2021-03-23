@@ -37,7 +37,7 @@ header {
   height: 80vh; 
   margin-bottom: 90px;
   margin-top: -150px;
-background-color: white;
+  background-color: white;
     
 }
 .buttonWithDes{
@@ -53,6 +53,8 @@ background-color: white;
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 10px;
 }
+
+
 .buttonWithDes p{
  font-size: 15px;
   color: black;
@@ -71,8 +73,9 @@ background-color: white;
   font-size: 15px;
   margin-top: 60px;
   background-color: #23689b;
-  color: #DDDD;
-  border-radius: 10px;
+  color: whitesmoke;
+  border-style: none;
+  border-radius: 3px;
   
 }
 .secondSection button:hover{
@@ -143,15 +146,16 @@ background-color: white;
 .thirdButton button{
   margin-left: 35%;
   margin-top: 20px;
-   padding-right: 25px;
+  padding-right: 25px;
   padding-left: 25px;
   padding-top: 5px;
   padding-bottom: 5px;
   margin-bottom: 50px;
   font-size: 15px;
   background-color: #23689b;
-  color: #DDDD;
-  border-radius: 10px;
+  color: whitesmoke;
+  border-style: none;
+  border-radius: 3px;
 }
 .thirdButton button:hover{
   background-color:#094d81;
@@ -159,6 +163,6 @@ background-color: white;
 
 }
 .thirdButton button a{
-   text-decoration: none;
-  color: rgb(196, 193, 193);
+  text-decoration: none;
+  color:whitesmoke;
 }
