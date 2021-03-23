@@ -123,8 +123,9 @@ footer {
 }
 
 .newsLetter {
-  width: 60%;
-  margin-right: auto; margin-left: auto;
+  width: 50%;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .newsLetter input {

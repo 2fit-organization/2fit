@@ -80,7 +80,7 @@ header {
 }
 .secondSection button:hover{
   background-color:#094d81;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 8px 0 rgba(0,0,0,0.19);
 
 }
 .images{
@@ -159,7 +159,7 @@ header {
 }
 .thirdButton button:hover{
   background-color:#094d81;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+  box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 8px 0 rgba(0,0,0,0.19);
 
 }
 .thirdButton button a{
