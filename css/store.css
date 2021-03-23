@@ -14,7 +14,7 @@ padding: 20px;
 }
 
 .middle-section {
-width: 60%;
+width: 65%;
 float: left;
 padding: 20px;
 overflow: auto; 
@@ -73,20 +73,24 @@ width: 70px
 .Supplemnts-product-info,
 .Equipments-product-info {
     float: left;
-    width: 60%;
-    padding-right: 10px;
+    width: 65%;
+    padding-right: 5px;
+
 }
 .Supplemnts-product-info h2,
 .Equipments-product-info h2{
 font-weight: bold;
 margin-bottom: 10px;
 font-size: 18px;
+padding: 0px 10px;
 }
 .Supplemnts-product-info p,
 .Equipments-product-info p{
-padding-bottom: 10px;
+margin-bottom: 10px;
 font-size: 14px;
 font-weight: 300;
+padding: 0px 10px;
+
 }
 .Supplemnts-product-info-price,
 .Equipments-product-info-price{
@@ -95,7 +99,7 @@ font-weight: 700 !important;
 }
 .Supplemnts-product-info-price::after,
 .Equipments-product-info-price::after {
-    font-size: 18px !important;
+font-size: 18px !important;
 font-weight: 700 !important;
 content: " JOD";
 
@@ -109,7 +113,7 @@ content: " JOD";
 .Supplemnts-product-button,
 .Equipments-product-button {
     display: block;
-    width: 80%;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
     padding-right: 15px;
@@ -126,7 +130,7 @@ content: " JOD";
 }
 .quantity{
     display: block;
-    width: 80%;
+    width: 100%;
     margin: auto;
     margin-top: 5px;
     padding: 5px 0px 5px 10px;
@@ -137,10 +141,9 @@ content: " JOD";
 
 
 .right-section {
-width: 20%;
-float: left;
+width: 15%;
+float: right;
 padding: 20px;
-
 }
 
 .right-section-div {

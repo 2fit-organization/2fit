@@ -1,3 +1,5 @@
+/* eslint-disable no-undef */
+/* eslint-disable no-unused-vars */
 'use strict';
 let chart_data = JSON.parse(localStorage.getItem('user data'));
 var ctx = document.getElementById('myChart').getContext('2d');
