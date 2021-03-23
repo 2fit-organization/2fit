@@ -47,15 +47,15 @@ function update_cart() {
     checkout_table_tbody_tr.appendChild(checkout_table_tbody_td_p);
     ///// price td
     let checkout_table_tbody_td_price = document.createElement('td');
-    checkout_table_tbody_td_price.textContent = cart[i].price + ' AED';
+    checkout_table_tbody_td_price.textContent = cart[i].price + ' JOD';
     checkout_table_tbody_tr.appendChild(checkout_table_tbody_td_price);
     ///// Quantity 
     let checkout_table_tbody_td_quantity = document.createElement('td');
-    checkout_table_tbody_td_quantity.textContent = cart[i].pro_quantity + ' Piece';
+    checkout_table_tbody_td_quantity.textContent = cart[i].pro_quantity + ' Item/s';
     checkout_table_tbody_tr.appendChild(checkout_table_tbody_td_quantity);
     ///// Total
     let checkout_table_tbody_td_total = document.createElement('td');
-    checkout_table_tbody_td_total.textContent = (cart[i].pro_quantity * parseInt(cart[i].price)) + ' AED';
+    checkout_table_tbody_td_total.textContent = (cart[i].pro_quantity * parseInt(cart[i].price)) + ' JOD';
     checkout_table_tbody_tr.appendChild(checkout_table_tbody_td_total);
     ////// Delete
     let checkout_table_tbody_td_delete = document.createElement('td');
@@ -75,7 +75,7 @@ function update_cart() {
     t_quantity = t_quantity + parseInt(cart[i].pro_quantity);
     console.log(t_quantity);
   }
-  total_price.textContent = t_price + ' AED';
+  total_price.textContent = t_price + ' JOD';
   total_items.textContent = t_quantity + ' Items';
 
 }
@@ -86,7 +86,7 @@ function erease_handler() {
   console.log ('asdasd')
   localStorage.setItem('cart', '');
   checkout_table_tbody.textContent = '';
-  total_price.textContent = '0 AED';
+  total_price.textContent = '0 JOD';
   total_items.textContent = '0 Items';
 }
 

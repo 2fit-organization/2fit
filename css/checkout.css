@@ -71,20 +71,40 @@ td p {
     cursor: pointer;
     font-size: 16px;
     font-weight: 700;
-    margin-top: 20px;
+    margin-top: 10px;
 }
 .pay_div {
-    margin: 20px 5px;
+    margin: 10px 5px;
+    overflow: hidden;
 }
-.Pay img {
+/* .Pay img {
     width: 30%;
     display: block;
     float: left;
     vertical-align: middle;
     cursor: pointer;
     margin: 0px 1%;
+    height: 70px;
 }
-.Pay img:target {
+.Pay img:active {
     outline: 1px black solid;
+    border: 1px black solid;
+} */
+[type=radio] {
+    margin-left: 20px;
 }
+
+label img {
+    width: 70px;
+    vertical-align: middle;
+    margin: 5px 10px;
+    height: 70px;
+}
+
+form div {
+    border: 1px solid black;
+    margin-bottom: 10px;
+}
+
+
 

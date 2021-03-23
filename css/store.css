@@ -97,7 +97,7 @@ font-weight: 700 !important;
 .Equipments-product-info-price::after {
     font-size: 18px !important;
 font-weight: 700 !important;
-content: " AED";
+content: " JOD";
 
 }
 .Supplemnts-product-button-div,
@@ -146,10 +146,18 @@ padding: 20px;
 .right-section-div {
     margin-top: 10px;
     margin-bottom: 10px;
+    margin-right: 20px;
     background-color: #dddddd;
     color: black;
     padding: 20px;
     line-height: 1.4;
+    position: fixed;
+}
+
+.right_section_img {
+    display: block;
+    width: 80px;
+    margin: auto;
 }
 
 .Checkout-btn {
