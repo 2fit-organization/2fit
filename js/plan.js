@@ -106,7 +106,7 @@ function submitHandler(event){
   else if(event.target.gender.value === 'male' && event.target.goal.value === 'getHealthy' && event.target.equipment.value === 'yes'){
     videoResult.innerHTML='<iframe src="https://www.youtube.com/embed/KY8jENkQpDQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>';
     pdfResult.innerHTML= '<embed src="healthy-diet.pdf" type="application/pdf">';
-    bodybuilding++;
+    getHealthy++;
   }
 
   ///// CASE 4 (M, H, W.E) /////------------------------------------------------
@@ -177,17 +177,6 @@ function submitHandler(event){
   externalLinks();
   localST();
 }
-
-// let car = [1,1,1,1]
-// let car2 = [1,1,1,1]
-// let caradd=[]
-// for (let i = 0; i < car.length; i++) {
-//   caradd[i] = car[i]+car2[i];
-  
-// }
-
-
-
 
 
 function externalLinks(){
