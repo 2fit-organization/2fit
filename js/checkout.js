@@ -1,15 +1,17 @@
-let cart = JSON.parse(localStorage.getItem('cart'));
-// console.log(typeof (cart));
-// console.log( cart);
+//////////////////////////// Globals ///////////////////////////////////////////
 
+let cart = JSON.parse(localStorage.getItem('cart'));
 let checkout_table_tbody = document.getElementById('checkout_table_tbody');
 let total_price = document.getElementById('total_price');
 let total_items = document.getElementById('total_items');
 let pay_button = document.getElementById('Pay_button');
 let clear_button = document.getElementById('clear_button');
 
-
+/////////////////////////// Update cart ////////////////////////////////////////
 update_cart();
+
+/////////////////////////// Update cart ////////////////////////////////////////
+
 checkout_table_tbody.addEventListener('click', CTTHandler);
 
 function CTTHandler(event) {
@@ -78,8 +80,6 @@ function update_cart() {
   }
   total_price.textContent = t_price + ' JOD';
   total_items.textContent = t_quantity + ' Items';
-  // localStorage.setItem('total_quantity',JSON.stringify(t_quantity));
-
 }
 
 

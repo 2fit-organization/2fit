@@ -5,18 +5,21 @@
 * {
   line-height: 1.3;
 }
+
 header {
   margin-bottom: 0px;
-  background-color: rgba(63, 62, 62, 0.6);
+  background-color: rgba(63, 62, 62, 0.2);
   position: sticky;
 }
 
 .firstSection{
   background-image:url("../Image/firstSectionImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 110vh;
   margin-top: -150px;
-  
 }
+
 .firstSection h2{
   color: white;
   font-size: 50px;
@@ -41,14 +44,15 @@ header {
   margin-bottom: 90px;
   margin-top: -150px;
   background-color: white;
-    
 }
+
 .buttonWithDes{
   padding: 20px;
   display: block;
   width: 80%; 
   float: left;
 }
+
 .buttonWithDes h3{
   font-size: 25px;
   color: #23689b;
@@ -56,7 +60,6 @@ header {
   font-family: 'Montserrat', sans-serif;
   margin-bottom: 10px;
 }
-
 
 .buttonWithDes p{
  font-size: 15px;
@@ -79,25 +82,28 @@ header {
   color: whitesmoke;
   border-style: none;
   border-radius: 3px;
-  
 }
+
 .secondSection button:hover{
   background-color:#094d81;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 8px 0 rgba(0,0,0,0.19);
-
 }
+
 .images{
   display: inline-block;
   width: 100%;
 }
+
 .images img{
   margin-top: 50px;
   width:24.5% ;
   padding-left: 10px;
 }
+
 .paragraph{
   width: 100%;
 }
+
 .paragraph p{
   display: inline-block;
   margin-top: 5px;
@@ -106,11 +112,12 @@ header {
   margin-bottom: 20px;
   font-size: 15px;
 }
+
 .paragraph div{
   display: inline-block;
   width:24.5% ;
-
 }
+
 .paragraph div h4{
   margin-top: 10px;
   margin-left: 15px;
@@ -127,16 +134,19 @@ header {
   margin-right: 10%;
   height: 70vh;
 }
+
 .imageThree img{
   width: 50%;
   float: right;
 }
+
 .paragraphThree p{
   width: 48%;
   font-family: 'Montserrat', sans-serif;
   float: left;
   font-size: 15px;
 }
+
 .paragraphThree h5{
   margin-bottom: 10px;
   color: #23689b;
@@ -146,6 +156,7 @@ header {
   font-weight: bold;
   text-align: justify;
 }
+
 .thirdButton button{
   margin-left: 35%;
   margin-top: 20px;
@@ -160,18 +171,18 @@ header {
   border-style: none;
   border-radius: 3px;
 }
+
 .thirdButton button:hover{
   background-color:#094d81;
   box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 8px 0 rgba(0,0,0,0.19);
-
 }
+
 .thirdButton button a{
   text-decoration: none;
   color:whitesmoke;
 }
 
 .get_plan{
-  /* display: block; */
   padding: 16px 35px !important;
   cursor: pointer;
 }
