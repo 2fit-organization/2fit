@@ -40,25 +40,25 @@ UserData.prototype.generateBMI = function () {
 UserData.prototype.bmiCases = function () {
   if (this.generateBMI() <= 18.5) {
     let bmiResult = document.createElement('h2');
-    bmiResult.textContent = 'Hello ' + this.userName + '! Your BMI result is: ' + this.generateBMI() + ', which means you\'re mostly underweight. Don\'t worry though.. We\'re here to help!';
+    bmiResult.innerHTML = 'Hello <span style="color:#23689b;"> ' + this.userName + ' </span> ! Your BMI result is: <span style="color:#23689b;"> ' + this.generateBMI() + ' </span>, which means you\'re mostly underweight. Don\'t worry though.. We\'re here to help!';
     bmiText.appendChild(bmiResult);
   }
 
   if (this.generateBMI() > 18.5 && this.generateBMI() < 25) {
     let bmiResult = document.createElement('h2');
-    bmiResult.textContent = 'Hello ' + this.userName + '! Your BMI result is: ' + this.generateBMI() + '. Which means you\'re in the normal range, Congrats!';
+    bmiResult.innerHTML = 'Hello <span style="color:#23689b;"> ' + this.userName + ' </span> ! Your BMI result is: <span style="color:#23689b;"> ' + this.generateBMI() + '.  </span> Which means you\'re in the <span style="color:#23689b;"> normal range </span>, Congrats!';
     bmiText.appendChild(bmiResult);
   }
 
   if (this.generateBMI() > 25 && this.generateBMI() < 30) {
     let bmiResult = document.createElement('h2');
-    bmiResult.textContent = 'Hello ' + this.userName + '! Your BMI result is: ' + this.generateBMI() + '. Which means you\'re a little overweight. Watch your health out!';
+    bmiResult.innerHTML = 'Hello <span style="color:#23689b;"> ' + this.userName + ' </span>! Your BMI result is: <span style="color:#23689b;"> ' + this.generateBMI() + '.  </span> Which means you\'re <span style="color:#23689b;"> a little overweight </span>. Watch your health out!';
     bmiText.appendChild(bmiResult);
   }
 
   if (this.generateBMI() >= 30) {
     let bmiResult = document.createElement('h2');
-    bmiResult.textContent = 'Hello ' + this.userName + '! Your BMI result is: ' + this.generateBMI() + '. Which means you\'re probably suffering from obesity. But don\'t worry.. We\'re here to help!';
+    bmiResult.innerHTML = 'Hello <span style="color:#23689b;"> ' + this.userName + '! </span> Your BMI result is: <span style="color:#23689b;"> ' + this.generateBMI() + '. </span> Which means you\'re probably suffering from <span style="color:#23689b;"> obesity </span>. But don\'t worry.. We\'re here to help!';
     bmiText.appendChild(bmiResult);
   }
 };
@@ -68,11 +68,11 @@ UserData.prototype.bmiCases = function () {
 UserData.prototype.activity = function () {
   if (this.active === 'lazy') {
     let activeResult = document.createElement('h2');
-    activeResult.textContent = 'We have your workout & diet plans ready! You need to workout 4-5 days a week, based on your usual activity:';
+    activeResult.innerHTML = 'We have your workout & diet plans ready! You need to workout <span style="color:#23689b;"> 4-5 days a week </span>, based on your usual activity:';
     activityText.appendChild(activeResult);
   } else if (this.active === 'active') {
     let activeResult = document.createElement('h2');
-    activeResult.textContent = 'We have your workout & diet plans ready! You need to workout 2-3 days a week, based on your usual activity:';
+    activeResult.innerHTML = 'We have your workout & diet plans ready! You need to workout <span style="color:#23689b;"> 2-3 days a week </span>, based on your usual activity:';
     activityText.appendChild(activeResult);
   }
 };

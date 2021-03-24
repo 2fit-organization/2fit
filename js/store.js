@@ -14,9 +14,6 @@ function btnHandler(event) {
   let product_obj = JSON.parse(event.target.hiddenbtn.value);
   product_obj.pro_quantity = parseInt(product_obj.pro_quantity) + parseInt(event.target.quantity.value);
   to_cart.push(product_obj);
-  // console.log(to_cart);
-  // console.log(typeof (event.target.hiddenbtn.value));
-  // console.log(typeof (JSON.parse(event.target.hiddenbtn.value)));
   localStorage.setItem('cart', JSON.stringify(to_cart));
   right_section_div.innerHTML = '';
   right_section_div.className = 'right-section-div';
@@ -50,7 +47,6 @@ function btnHandler(event) {
   // }
   // }
 }
-
 function SEoptionHandler(event) {
   // console.log('sds')
   event.preventDefault();
@@ -67,7 +63,6 @@ function SEoptionHandler(event) {
   } else if (event.target.Supplemnts_or_Equipments.value === 'Equipments' && event.target.weight_loss_maintain_gain.value === 'Maintain-weight') {
     filter_choices('none', 'block', 'none', 'none', 'block');
   } else {
-    //   console.log('sds')
     document.getElementById('Equipments-products-container').style.display = 'block';
     document.getElementById('Supplemnts-products-container').style.display = 'block';
   }
@@ -79,8 +74,6 @@ function FFRoptionHandler(event) {
     filter_choices('block', 'block', 'block', 'block', 'block');
   }
 }
-
-
 ///////////////////////////Helper functions/////////////////////////////////
 function weight_loss_opt_f(display) {
   let weight_loss_opt = document.getElementsByClassName('Weight-loss');
@@ -107,7 +100,6 @@ function filter_choices(c1, c2, c3, c4, c5) {
   weight_gain_opt_f(c4);
   weight_maintain_opt_f(c5);
 }
-
 function calculate_quantity() {
   let t_quantity = 0;
   for (let i = 0; i < to_cart.length; i++) {
@@ -117,21 +109,7 @@ function calculate_quantity() {
   }
   return t_quantity;
 }
-
-'Maintain-weight';
-'Gain-muscle';
-'Weight-loss';
-
 ///////////////////////////Creating objects/////////////////////////////////
-
-
-
-
-
-
-///////////////////////////Calling objects/////////////////////////////////
-
-
 function call_render_products() {
   let p1 = new Product(
     'CLA Capsules',
@@ -236,6 +214,10 @@ function call_render_products() {
     'Equipments',
     'Gain-muscle');
 }
-
+///////////////////////////Calling objects/////////////////////////////////
 call_render_products();
+
+
+
+
 

@@ -1,4 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@500&display=swap');
+* {
+  line-height: 1.2;
+}
 .mainBlog{
   width: 80%;
   margin-left: 10%;
@@ -10,8 +13,8 @@
   font-size: 50px;
   font-weight: bold;
   color: #23689b;
-  margin-top: 100px;
-  margin-bottom: 70px;
+  margin-top: 50px;
+  margin-bottom: 40px;
 }
 
 .mainBlog p{
@@ -35,7 +38,7 @@
   float: left;
   margin: 10px;
   margin-bottom: 0px;
-  margin-left: 55px;
+  /* margin-left: 55px; */
 }
 
 /* #############################Second Section####################### */
@@ -45,13 +48,13 @@
   width: 80%;
   margin-left: 10%;
   margin-right: 10%;
-  height: 80vh;
+  height: 68vh;
 }
 .suggestSection h2{
   font-size: 30px;
   font-weight: bold;
   color: #23689b;
-  margin-top: 100px;
+  margin-top: 50px;
   margin-bottom: 20px;
 }
 .images img{
@@ -106,7 +109,7 @@
   color: whitesmoke;
 }
 .secondParaghraph h3{
-  margin-left: 55px;
+  /* margin-left: 55px; */
   margin-top: 20px;
   margin-bottom: 20px;
   font-size: 20px;
@@ -114,7 +117,7 @@
   font-weight: bold;
 }
 .secondParaghraph h4{
-  margin-left: 55px;
+  /* margin-left: 55px; */
   margin-top: 10px;
   margin-bottom: 10px;
   font-size: 20px;
