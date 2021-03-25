@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Chango&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,500;0,700;1,300;1,500;1,700&display=swap');
+
+
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> FORM <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+body{
+    background-image: url(../Image/BG2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.address{
+    margin-left: auto; margin-right: auto; margin-top: 50px;
+    width: 50%;
+    text-align: center;
+    font-size: 22px;
+    color: rgb(196, 193, 193);
+}
+
+.form{
+    width: 50%;
+    margin-left: auto; margin-right: auto; margin-top: 10px;
+    font-size: 15px;
+    line-height: 2.7;
+}
+
+.form fieldset{
+    margin: 5px;
+    padding-right: 15px; padding-left: 15px; padding-bottom: 15px;
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border: rgb(230, 230, 230) solid 2px;
+}
+
+.form legend{
+    margin-left: 18px;
+    padding-right: 10px; padding-left: 10px; padding-bottom: 0px;
+    font-size: 20px;
+    position: relative; bottom:8px;
+    color: #23689b;
+}
+
+
+.form label{
+    margin-left: 12px;
+    color: rgb(44, 43, 43);
+    font-weight: bold ;
+}
+
+.form input{
+    font-size: 12px;
+}
+
+.form label:after {
+    content:'*';
+    color: rgb(172, 0, 0);
+}
+
+.formData{
+    margin-left: 50px;
+    margin-top: -10px;
+}
+
+.numberInput{
+    width: 120px;
+}
+
+::placeholder{
+    font-size: 12px;
+}
+
+.form fieldset select{
+    font-size: 12px;
+}
+
+.form fieldset select option{
+ color: black;
+}
+
+.form fieldset p{
+    color: rgb(172, 0, 0);
+    font-size: 12px;
+    margin-left: 60px;
+}
+
+.submit{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    padding-right: 40px;
+    padding-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-radius: 3px;
+    border-style: none;
+    background-color:#23689b;
+    color: whitesmoke;
+}
+
+input[type=submit] {
+    font-size: 15px;
+}
+
+.submit:hover{
+  
+    background-color:#094d81;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 8px 0 rgba(0,0,0,0.19);
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> RESULTS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.result{
+    width: 50%;
+    margin-top: 30px;
+    margin-left: auto; margin-right: auto;
+    text-align: center;
+}
+
+#textResult{
+    width: 100%;
+    margin-bottom: 15px;
+    font-size: 15px;
+    color: rgb(44,43,43);
+    line-height: 1.8;
+    text-align: left;
+    padding: 20px 20px 20px 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    font-weight: 500;
+    font-size: 18px;
+}
+
+#bmiText{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+iframe,
+embed {
+    width: 100%;
+    height: 500px;
+    margin-bottom: 30px;
+}
+
+/* >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> LINKS <<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<< */
+
+.links{
+    clear: both;
+    width: 80%;
+    text-align: center;
+    margin-left: auto; margin-right: auto;
+    font-size: 15px;
+}
+
+#storeLink{
+    clear: both;
+    display: inline;
+    position: relative;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    float: right;
+    text-align: center;
+    color:rgb(196, 193, 193);
+    font-weight: lighter;
+}
+
+#storeLink a{
+    text-decoration: none;
+    color: #23689b;
+    font-weight: bold;
+}
+
+#storeLink a:hover{
+    text-decoration: none;
+    color: #23679bbd;
+    font-weight: bold;
+}
+
+#chartLink{
+    display: inline;
+    position: relative;
+    width: 50%;
+    margin-top: 50px;
+    margin-bottom: 30px;
+    float: left;
+    text-align: center;
+    color:rgb(196, 193, 193);
+    font-weight: lighter;
+}
+
+#chartLink a{
+    text-decoration: none;
+    color: #23689b;
+    font-weight: bold;
+}
+
+#chartLink a:hover{
+    text-decoration: none;
+    color: #23679bbd;
+    font-weight: bold;
+}
+
+footer{
+    clear: both;
+    margin-top: 30px;
+}

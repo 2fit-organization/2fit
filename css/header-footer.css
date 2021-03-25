@@ -28,13 +28,13 @@ nav {
 }
 
 .headerLogo {
-width: 30%;
-float: left;
-padding-bottom: 2vh;
+  width: 30%;
+  float: left;
+  padding-bottom: 2vh;
 }
 
 .headerLogo img {
-width: 160px;
+  width: 160px;
 }
 
 .navList {
@@ -69,8 +69,8 @@ width: 160px;
 /* ######################################Footer################################################# */
 footer {
   background-color: rgb(44, 43, 43);
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding-top: 10px;
+  padding-bottom: 10px;
   overflow: hidden;
   margin-top: 30px;
 }
@@ -83,7 +83,7 @@ footer {
 
 .footer1 {
   float: right;
-  width: 50%;
+  width: 60%;
   margin-bottom: 30px;
 }
 
@@ -91,34 +91,43 @@ footer {
   width: 220px;
   display: block;
   margin: auto;
-  margin-bottom: 20px;
 }
 
 .footer11 p  {
+  width: 70%;
   color: white;
-  text-align: center;
+  margin-right: auto; margin-left: auto;
   margin-bottom: 20px;
-  font-size: 16px;
+  text-align: center;
+  font-size: 15px;
+  font-weight: lighter;
   line-height: 1.4;
 }
 
 .footer11 ul  {
   overflow: hidden;
   width: 50%;
-  margin: auto;
+  margin-right: auto; margin-left: auto;
   margin-top: 20px;
   margin-bottom: 20px;
+  text-align: center;
 }
 
-.footer11 ul img {
-  width: 30px;
-  margin-left: 20px;
+.footer11 ul li {
+  width: 12.5%;
   float: left;
 }
 
+.footer11 ul img {
+  width:30px;
+}
+
 .newsLetter {
-  width: 60%;
-  margin: auto;
+  /* width: 50%; */
+  display: inline-block;
+  margin-right: auto;
+  margin-left: 25%;
+
 }
 
 .newsLetter input {
@@ -127,6 +136,7 @@ footer {
   padding-right: 30px;
   background-color: #dddddd;
   border: hidden;
+  border-radius: 3px;
 }
 
 .newsLetter input:first-child {
@@ -138,35 +148,35 @@ footer {
 }
 
 .newsLetter input:nth-child(2) {
-cursor: pointer;
+  cursor: pointer;
 }
 
 .newsLetter input:nth-child(2):hover {
-background-color: #b6b3b3;
+  background-color: #b6b3b3;
 }
 
 .footer2 {
   float: right;
-  width: 50%;
-  margin-top: 30px;
+  width: 40%;
+  margin-top: 70px;
 }
 
 .footer2 h3 {
   color: white;
-  font-size: 25px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
 
 .footer2 a {
   display: block;
-  font-size: 20px;
+  font-size: 15px;
   margin-bottom: 10px;
   text-decoration: none;
   color: rgb(196, 193, 193);
 }
 
 .footer2 a:hover {
-color: #6b6666;
+  color: #6b6666;
 }
 
 .footer2 ul {
@@ -186,6 +196,7 @@ color: #6b6666;
 .footer3 p {
   color: white;
   text-align: center;
-  margin-bottom: 10px;
+  font-size: 12px;
+  font-weight: lighter;
   line-height: 1.4;
 }

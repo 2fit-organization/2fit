@@ -28,5 +28,53 @@ A web application project oriented to people who have fit related goals but need
 
 
 
+## WireFrames 
+
+#### HomePage
+![HomePage-wirefram](./Image/WireFrames/wireframe-index.jpg);
+
+#### About-us
+![About-us-wirefram](./Image/WireFrames/about-us-page-wireframe.jpg);
+
+#### blog
+![blog-wirefram](./Image/WireFrames/wireframe-Blog.jpg);
+
+#### plan
+![plan-wirefram](./Image/WireFrames/wireframe-Plan.jpg);
+
+#### store
+![store-wirefram](./Image/WireFrames/wireframe-sotre.jpg);
+
+#### cart
+![cart-wirefram](./Image/WireFrames/wireframe-cart.jpg);
+
+#### chart
+![chart-wirefram](./Image/WireFrames/wireframe-Chart.jpg);
+
+
+## User Stories
+
+1- As a I user, I need an index.html page, which should include these features:
+- Modern design.
+- include a nice header and footer.
+
+2- As a I user, I need an plan.html page, which should include these features:
+- Form to submit user data.
+- box to show user plan the fits him.
+
+3- As a I user, I need an products.html page, which should include these features:
+- Showw all the website products.
+- Filtering feature. 
+- Add to cart button.
+
+4- As a I user, I need an cart.html page, which should include these features:
+- Show all added products to the cart, named checkout. 
+- a way to delete the user choice of the products in the cart.
+
+5- As a I user, I need an chart.html page, which should include these features:
+- chart to show how customer choose [bodybuilding, gain weight, loss weight].
+
+
+
 
 

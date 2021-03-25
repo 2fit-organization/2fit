@@ -1,0 +1,223 @@
+main {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+a {
+    text-decoration: none;
+}
+
+.left-section {
+    width: 20%;
+    float: left;
+    padding: 20px;
+}
+
+.middle-section {
+    width: 65%;
+    float: left;
+    padding: 20px;
+    overflow: auto; 
+}
+
+.middle-section-header,
+.left-section-header {
+    margin-bottom: 20px;
+}
+
+.middle-section-header h1,
+.left-section-header h1 {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.middle-section-header hr,
+.left-section-header hr {
+    margin-top: 5px;
+}
+
+.products-section-header{
+    margin-bottom: 20px;
+}
+
+.Supplemnts-products-section-header h2,
+.Equipments-products-section-header h2{
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.Supplemnts-product,
+.Equipments-product {
+    padding: 10px;
+    overflow: hidden;
+    margin-bottom: 30px;
+}
+
+.Supplemnts-product-img,
+.Equipments-product-img {
+    float: left;
+    width: 12%;
+}
+
+.Supplemnts-product-img img ,
+.Equipments-product-img img {
+    width: 70px; 
+}
+
+.Supplemnts-product-info,
+.Equipments-product-info {
+    float: left;
+    width: 65%;
+    padding-right: 5px;
+}
+
+.Supplemnts-product-info h2,
+.Equipments-product-info h2{
+    font-weight: bold;
+    margin-bottom: 10px;
+    font-size: 18px;
+    padding: 0px 10px;
+}
+
+.Supplemnts-product-info p,
+.Equipments-product-info p{
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 300;
+    padding: 0px 10px;
+}
+
+.Supplemnts-product-info-price,
+.Equipments-product-info-price{
+    font-size: 18px !important;
+    font-weight: 700 !important;
+}
+
+.Supplemnts-product-info-price::after,
+.Equipments-product-info-price::after {
+    font-size: 18px !important;
+    font-weight: 700 !important;
+    content: " JOD";
+}
+
+.Supplemnts-product-button-div,
+.Equipments-product-button-div {
+    float: left;
+    width: 23%;
+}
+
+.Supplemnts-product-button,
+.Equipments-product-button {
+    display: block;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #23689b;
+    color: whitesmoke;
+    cursor: pointer;
+    margin-top: 4%;
+}
+
+.Supplemnts-product-button:hover,
+.Equipments-product-button:hover {
+    background-color:#094d81;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 8px 0 rgba(0,0,0,0.19);
+}
+
+.quantity{
+    display: block;
+    width: 100%;
+    margin: auto;
+    margin-top: 5px;
+    padding: 5px 0px 5px 10px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: rgba(0, 0, 0, 0.158);
+}
+
+.right-section {
+    width: 15%;
+    float: right;
+    padding: 20px;
+}
+
+.right-section-div {
+    margin-top: 10px;
+    margin-right: 20px;
+    background-color: #dddddd;
+    color: black;
+    padding: 20px;
+    line-height: 1.4;
+    position: fixed;
+}
+
+.right_section_img {
+    display: block;
+    width: 80px;
+    margin: auto;
+}
+
+.Checkout-btn {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #23689b;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.Checkout-btn:hover{
+    background-color:#094d81;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 8px 0 rgba(0,0,0,0.19);
+}
+
+.Supplemnts-or-Equipments,
+.weight-loss-maintain-gain {
+    width: 100%;
+    padding: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.filter-form-reset,
+.filter-form-submit {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+    border-style: none;
+    background-color: #23689b;
+    color: whitesmoke;
+    cursor: pointer;
+}
+
+.filter-form-reset:hover,
+.filter-form-submit:hover {
+    background-color:#094d81;
+    box-shadow: 0 1px 2px 0 rgba(0,0,0,0.2), 0 1px 8px 0 rgba(0,0,0,0.19);
+}
