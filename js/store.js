@@ -1,3 +1,4 @@
+/* eslint-disable no-unused-vars */
 /* eslint-disable no-undef */
 'use strict';
 ///////////////////////////Event listners/////////////////////////////////
@@ -6,51 +7,108 @@ filter_form.addEventListener('submit', SEoptionHandler);
 filter_form_reset.addEventListener('click', FFRoptionHandler);
 let right_section_div = document.createElement('div');
 
+
 ///////////////////////////Event listners functions/////////////////////////////////
+// function btnHandler(event) {
+//   event.preventDefault();
+//   // console.log(event.target.quantity.value);
+//   // console.log(event.target.hiddenbtn.value);
+//   let product_obj = JSON.parse(event.target.hiddenbtn.value);
+//   product_obj.pro_quantity = parseInt(product_obj.pro_quantity) + parseInt(event.target.quantity.value);
+//   to_cart.push(product_obj);
+//   localStorage.setItem('cart', JSON.stringify(to_cart));
+//   right_section_div.innerHTML = '';
+//   right_section_div.className = 'right-section-div';
+//   right_section.appendChild(right_section_div);
+//   let right_section_img = document.createElement('img');
+//   right_section_img.src = product_obj.image_path;
+//   right_section_img.className = 'right_section_img';
+//   right_section_div.appendChild(right_section_img);
+
+//   let right_section_p = document.createElement('p');
+//   right_section_p.innerHTML = 'You have added <span style="color:#23689b;"> ' + product_obj.title + ' </span> To the Cart with a quantity of <span style="color:#23689b;"> ( ' + product_obj.pro_quantity + ' ) </span>, Succesfully.';
+//   right_section_div.appendChild(right_section_p);
+//   //// btn
+//   let a = document.createElement('a');
+//   let btn = document.createElement('button');
+//   btn.className = 'Checkout-btn';
+//   btn.innerText = 'Checkout ' + '( ' + calculate_quantity() + ' )';
+//   a.href = 'checkout.html';
+//   a.appendChild(btn);
+//   right_section_div.appendChild(a);
+
+//   // if (Checkout_btn_div.innerHTML === '') {
+//   //   console.log('test');
+//   //   let a = document.createElement('a');
+//   //   let btn = document.createElement('button');
+//   //   btn.className = 'Checkout-btn';
+//   //   btn.innerText = 'Checkout';
+//   //   a.href = 'checkout.html';
+//   //   a.appendChild(btn);
+//   //   Checkout_btn_div.appendChild(a);
+//   // }
+//   // }
+// }
+
+
 function btnHandler(event) {
+
   event.preventDefault();
-  console.log(event.target.quantity.value);
-  console.log(event.target.hiddenbtn.value);
-  let product_obj = JSON.parse(event.target.hiddenbtn.value);
-  product_obj.pro_quantity = parseInt(product_obj.pro_quantity) + parseInt(event.target.quantity.value);
-  to_cart.push(product_obj);
-  localStorage.setItem('cart', JSON.stringify(to_cart));
-  right_section_div.innerHTML = '';
-  right_section_div.className = 'right-section-div';
-  right_section.appendChild(right_section_div);
-  let right_section_img = document.createElement('img');
-  right_section_img.src = product_obj.image_path;
-  right_section_img.className = 'right_section_img';
-  right_section_div.appendChild(right_section_img);
+  console.log(event.target.id);
+  for (let i = 0; i < productsArray.length; i++) {
+    if (event.target.id == productsArray[i].id) {
+      for (let j = 0; j < to_cart.length; j++) {
+        if (to_cart[j].title === productsArray[i].title)
+          to_cart[j].pro_quantity = parseInt(to_cart[j].pro_quantity) + parseInt(event.target.quantity.value);
 
-  let right_section_p = document.createElement('p');
-  right_section_p.innerHTML = 'You have added <span style="color:#23689b;"> ' + product_obj.title + ' </span> To the Cart with a quantity of <span style="color:#23689b;"> ( ' + product_obj.pro_quantity + ' ) </span>, Succesfully.';
-  right_section_div.appendChild(right_section_p);
-  //// btn
-  let a = document.createElement('a');
-  let btn = document.createElement('button');
-  btn.className = 'Checkout-btn';
-  btn.innerText = 'Checkout ' + '( ' + calculate_quantity() + ' )';
-  a.href = 'checkout.html';
-  a.appendChild(btn);
-  right_section_div.appendChild(a);
+      }
+      if (!to_cart.includes(productsArray[i])) {
+        productsArray[i].pro_quantity = parseInt(productsArray[i].pro_quantity) + parseInt(event.target.quantity.value);
+        to_cart.push(productsArray[i]);
+      }
+      localStorage.setItem('cart', JSON.stringify(to_cart));
+      right_section_div.innerHTML = '';
+      right_section_div.className = 'right-section-div';
+      right_section.appendChild(right_section_div);
+      let right_section_img = document.createElement('img');
+      right_section_img.src = productsArray[i].image_path;
+      right_section_img.className = 'right_section_img';
+      right_section_div.appendChild(right_section_img);
 
-  // if (Checkout_btn_div.innerHTML === '') {
-  //   console.log('test');
-  //   let a = document.createElement('a');
-  //   let btn = document.createElement('button');
-  //   btn.className = 'Checkout-btn';
-  //   btn.innerText = 'Checkout';
-  //   a.href = 'checkout.html';
-  //   a.appendChild(btn);
-  //   Checkout_btn_div.appendChild(a);
-  // }
-  // }
+      let right_section_p = document.createElement('p');
+      right_section_p.innerHTML = 'You have added <span style="color:#23689b;"> ' + productsArray[i].title + ' </span> To the Cart with a quantity of <span style="color:#23689b;"> ( ' + event.target.quantity.value + ' ) </span>, Succesfully.';
+      right_section_div.appendChild(right_section_p);
+      //// btn
+      let a = document.createElement('a');
+      let btn = document.createElement('button');
+      btn.className = 'Checkout-btn';
+      btn.innerText = 'Checkout ' + '( ' + calculate_quantity() + ' )';
+      a.href = 'checkout.html';
+      a.appendChild(btn);
+      right_section_div.appendChild(a);
+
+      if (Checkout_btn_div.innerHTML === '') {
+        console.log('test');
+        let a = document.createElement('a');
+        let btn = document.createElement('button');
+        btn.className = 'Checkout-btn';
+        btn.innerText = 'Checkout';
+        a.href = 'checkout.html';
+        a.appendChild(btn);
+        Checkout_btn_div.appendChild(a);
+      }
+    }
+
+  }
+
+
 }
+
+
 function SEoptionHandler(event) {
   // console.log('sds')
   event.preventDefault();
-  if (event.target.Supplemnts_or_Equipments.value === 'Supplemnts' && event.target.weight_loss_maintain_gain.value === 'Weight-loss' ) {
+  if (event.target.Supplemnts_or_Equipments.value === 'Supplemnts' && event.target.weight_loss_maintain_gain.value === 'Weight-loss') {
     filter_choices('block', 'none', 'block', 'none', 'none');
   } else if (event.target.Supplemnts_or_Equipments.value === 'Supplemnts' && event.target.weight_loss_maintain_gain.value === 'Gain-muscle') {
     filter_choices('block', 'none', 'none', 'block', 'none');

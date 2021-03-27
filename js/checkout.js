@@ -52,7 +52,7 @@ function update_cart() {
     let checkout_table_tbody_td_price = document.createElement('td');
     checkout_table_tbody_td_price.textContent = cart[i].price + ' JOD';
     checkout_table_tbody_tr.appendChild(checkout_table_tbody_td_price);
-    ///// Quantity 
+    ///// Quantity
     let checkout_table_tbody_td_quantity = document.createElement('td');
     checkout_table_tbody_td_quantity.textContent = cart[i].pro_quantity + ' Item/s';
     checkout_table_tbody_tr.appendChild(checkout_table_tbody_td_quantity);
@@ -85,7 +85,7 @@ function update_cart() {
 
 pay_button.addEventListener('click', erease_handler);
 function erease_handler() {
-  console.log ('asdasd')
+  console.log ('asdasd');
   localStorage.setItem('cart', '');
   checkout_table_tbody.textContent = '';
   total_price.textContent = '0 JOD';
